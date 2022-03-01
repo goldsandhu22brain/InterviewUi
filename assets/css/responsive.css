@@ -1,0 +1,306 @@
+/* Large Screen  */
+@media (min-width: 1170px) and (max-width: 1400px) {
+
+
+
+
+
+
+
+}
+
+/* Additional media query */
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1210px;
+  }
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+
+
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.heightb {
+    height: 470px;
+}
+	.backbanner {
+    height: 400px;
+    background-size: contain;
+    background-color: #94ccfd;
+}
+.footer-main .statsLhs .studentCount {
+    font-size: 54px;
+}
+.footer-main .statsRhs .statsListItem .value {
+    font-size: 40px;
+}
+.dt-sc-icon-box.type2.custom-style .icon-content {
+    padding: 0;
+}
+.dt-sc-icon-box.type2.custom-style .icon-content h5 {
+    height: 120px;
+    line-height: 120px;
+    width: 120px;
+}
+.dt-sc-icon-box.type2.custom-style .icon-content h5:before {
+    height: 140px;
+    width: 140px;
+}
+.footer-main .kidLhs .buttonWrapper .getSubscription, 
+.footer-main .kidLhs .buttonWrapper .chatWithUs {    padding: 15px 5px;}
+.main-banner {
+    height: 60vh;
+}
+.inner-banner {
+    height: 40vh;
+}
+.toggle-top,
+header #content {
+    display: none;
+}
+header .navbar-collapse {
+    background: #2c6e73;
+}
+header.fixed-top.sticky .navbar-dark .navbar-toggler {
+    filter: brightness(0%);
+}
+#loginform .modal-dialog, #registerform .modal-dialog,
+#forgetform .modal-dialog {
+    max-width: 95%;
+}
+.p-5 {
+    padding: 1rem!important;
+}
+.video-course .card li.list-inline-item:last-child {
+    width: 30%;
+}
+.one-courses h1 {
+    font-size: 2.4rem !important;
+}
+.video-course ul.star-rating li:last-child {
+    width: 100%;
+}
+.oneon-in .px-5 {
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+}
+.onlinep li.list-inline-item.ms-5 {
+    margin-left: 0rem!important;
+}
+.find-next .find-in {
+    margin-top: 23vh;
+}
+.find-next h1 {
+    font-size: 40px;
+}
+.find-next .row.licks {
+    padding: 5vh 15px 15px 15px;
+}
+.find-next {
+    min-height: 70vh;
+}
+
+
+
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.find-next .find-in {
+    margin-top: 15vh;
+}
+.find-next img {
+    margin-top: 0vh;
+}
+.find-next .btn-primary {
+    margin-bottom: 15px;
+}
+.find-next .row.licks {
+    padding: 10px 0;
+}
+.profile-banner .bootstrap-tagsinput, .mb-sm-2 {
+    margin-bottom: 10px;
+}
+.profile-banner, .ebook-banner {
+    padding: 20% 0 5% 0;
+}	
+.oneon-sec .oneon-in.pink {
+    margin-top: 3rem;
+}
+.one-courses h1 {
+    font-size: 2.4rem !important;
+}	
+.backbanner {
+    height: 330px;
+    background-size: contain;
+    background-color: #94ccfd;
+}
+.ebook-banner h1 {
+    font-size: 2.4rem;
+    margin-top: 10%;
+}
+.bottom-ser h1 {
+    font-size: 35px;
+}
+.video-course .form-select {
+    margin-bottom: 10px;
+}
+.video-course .row.inn-row {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.in-banner {
+height: 350px;}
+.in-banner h1 {
+    font-size: 50px;
+}
+	.p-5 {
+    padding: 1rem!important;
+}
+
+.inner-banner {
+    height: 40vh;
+}
+.footer-main .statsLhs .studentCount {
+    font-size: 60px;
+}
+.toggle-top {
+    display: none;
+}
+header.fixed-top.sticky .navbar-dark .navbar-toggler {
+    filter: brightness(0%);
+}
+header #content {
+    display: none;
+}
+.heading h1.display-4, .heading-black h1.display-4 {
+    font-size: 30px;
+}
+.mb-5 {
+    margin-bottom: 0px !important;
+}
+.py-5 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.px-5 {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+}
+.top-mar, .mar-bottm,
+.footer-main .statsLhs .studentCount {
+    margin-top: 0;
+}
+.dt-sc-icon-box {
+    margin-bottom: 15%;
+}
+.footer-main .kidLhs .blackHeader, .footer-main .kidLhs .whiteHeader {
+    font-size: 35px;
+    line-height: 34px;
+}
+.footer-main .kidLhs .buttonWrapper .chatWithUs,
+.footer-main .kidLhs .buttonWrapper .getSubscription {
+padding: 10px 10px;}
+.footer-main .kidLhs .buttonWrapper {
+    margin-top: 25px;
+}
+.footer-main .statsLhs .statsHeader {
+    font-size: 38px;
+    line-height: 42px;
+}
+.foosec2.pt-4 .col-md-3 .col-12 {
+    flex: 0 0 auto;
+    width: 35%;
+    margin-bottom: 10px;
+}
+#loginform .modal-dialog, #registerform .modal-dialog {
+    max-width: 100%;
+}
+.banner-bottom .bottom-center {
+    margin-bottom: 20px;
+}
+.footer-main #copyrights,
+.footer-main .copyright-links {
+    text-align: center;
+}
+.profile-sec .bio-row {
+    width: 100%;
+}
+.profile-sec>.container>.row {
+  padding: 20px; 
+}
+.heightb img {
+    width: 60%;
+}
+.heightb {
+    height: 400px;
+    padding: 20% 0 0% 0;
+}
+.onlinep .media {
+    display: block;
+}
+.onlinep li.list-inline-item.ms-5 {
+    margin-left: 0rem!important;
+}
+
+
+
+}
+
+
+/* Additional Media Quirry */
+@media only screen and (max-width: 479px){
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+ 
+
+/* Large Screen (1920)  */
+@media (min-width: 1601px) {
+
+
+}
+
+/* Large Screen (1600)  */
+@media (min-width: 1401px) and (max-width: 1600px) {
+
+	
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+	
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	
+	
+	
+}
