@@ -137,11 +137,15 @@ header.fixed-top.sticky .navbar-nav .nav-link {
 	background: transparent;
 }
 /* ---------Header css start------------  */
-.navbar-nav .nav-link {
+.navbar-dark .nav-link {
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'MyriadProBold';
     letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-item > .nav-link {
     color: #fff;
 }
 header span.navbar-text .navbar-nav li a {
@@ -154,11 +158,10 @@ header.fixed-top {
 header .navbar .navbar-nav .nav-item {
     margin-left: 30px;
 }
-
-
-.navbar-toggler-icon {
-    filter: invert(100%);
+span.navbar-text .dropdown-item {
+    color: #212529;
 }
+
 /* ---------Header css End------------  */
 .btn-req {
     background: #ea354b;
