@@ -118,6 +118,20 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+#sidebarCollapse {
+    left: 0px;
+    z-index: 9999;
+}	
+.login-form-container {
+	padding: 30px;
+	margin-bottom: 20px;
+}
+.login-main {
+    padding: 5rem 0;
+}
+.login-toggle-btn .button-box {
+    margin-left: 6rem;
+}
 .find-next .find-in {
     margin-top: 15vh;
 }

@@ -1,0 +1,114 @@
+.login-register-form p {
+    font-size: 15px;
+    color: #6A6A6A;
+    font-weight: 500;
+}
+.login-form-container:hover {
+    border: 3px solid #00adff;
+}
+.login-form-container {
+    border: 3px solid transparent;
+}
+.login-form-container {
+    height: 370px;
+}
+.login-toggle-btn label {
+    margin-bottom: 0px;
+}
+.login-register-form.reg-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.login-form-container,
+.every-container {
+  /*  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    box-shadow: 0 0 6px rgb(0 0 0 / 10%); */
+	padding: 3rem 2.5rem;
+    text-align: left;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 25%);
+    border-radius: 4px;
+}
+.every-container p {
+    color: #6A6A6A;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.every-container {
+	padding: 4rem 6.5rem;
+}
+.login-register-wrapper h4, .every-wrapper h4 {
+    color: #E1C574;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.login-register-wrapper h2, .every-wrapper h2   {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-form-container .login-btn, .login-form-container .register-btn {
+    border-radius: 0px;
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    background: #ea354b;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.login-form-container .login-register-form .login-input-box label {
+    font-size: 12px;
+    color: #6A6A6A;
+    font-weight: 500;
+	    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.login-form-container .button-box p {
+    font-weight: 500;
+    color: #6A6A6A;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'MyriadProRegular';
+	    margin-top: 20px;
+}
+.login-input-box input {
+    color: #131212;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 8px 12px;
+    width: 75%;
+    font-size: 14px;
+}
+.login-toggle-btn {
+    justify-content: flex-end;
+    align-items: center;
+}
+.login-toggle-btn input {
+    margin-right: 5px;
+    width: 15px;
+}
+.login-toggle-btn label {
+    margin-bottom: 0px;
+}
+.login-toggle-btn .button-box {
+    width: 25%;
+    margin-left: 8rem;
+}
+.login-form-container h3 {
+    font-family: 'MyriadProBold';
+}
+
+.login-main {
+    background: #26252f;
+    padding: 15rem 0;
+}
