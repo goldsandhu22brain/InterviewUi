@@ -4,7 +4,7 @@ $(document).ready(function(){
 $('.users').owlCarousel({
     loop:true,
 	center: false,
-	autoplay:true,
+	autoplay:false,
     margin:10,
     nav:true,
 	dots: true,
