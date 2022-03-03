@@ -130,88 +130,29 @@
 		<section class="login-main">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 mb-4">
+					<div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
 						 <!-- login-register-tab-list end -->
 						<div class="login-form-container">
 							<div class="login-register-form">
 							<h3>Register</h3>
-							<p>Create a new account.</p>
-							<a href="candidate/account/login/index.html">Alrady Have an Account? Login as Candidate</a>
-							<form class="needs-validation" novalidate>
-							  <div class="form-row">
-								<div class="col-md-6 mb-3">
-								  <input type="text" class="form-control w-100" name="first-name" placeholder="First Name" required>
-								  <div class="invalid-feedback">
-									Looks good!
-								  </div>
-								</div>
-								<div class="col-md-6 mb-3">
-								  <label for="validationCustom02">Last name</label>
-								  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-								  <div class="valid-feedback">
-									Looks good!
-								  </div>
-								</div>
-								<div class="col-md-4 mb-3">
-								  <label for="validationCustomUsername">Username</label>
-								  <div class="input-group">
-									<div class="input-group-prepend">
-									  <span class="input-group-text" id="inputGroupPrepend">@</span>
-									</div>
-									<input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-									<div class="invalid-feedback">
-									  Please choose a username.
-									</div>
-								  </div>
-								</div>
-							  </div>
-							  <div class="form-row">
-								<div class="col-md-6 mb-3">
-								  <label for="validationCustom03">City</label>
-								  <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-								  <div class="invalid-feedback">
-									Please provide a valid city.
-								  </div>
-								</div>
-								<div class="col-md-3 mb-3">
-								  <label for="validationCustom04">State</label>
-								  <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-								  <div class="invalid-feedback">
-									Please provide a valid state.
-								  </div>
-								</div>
-								<div class="col-md-3 mb-3">
-								  <label for="validationCustom05">Zip</label>
-								  <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-								  <div class="invalid-feedback">
-									Please provide a valid zip.
-								  </div>
-								</div>
-							  </div>
-							  <div class="form-group">
-								<div class="form-check">
-								  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-								  <label class="form-check-label" for="invalidCheck">
-									Agree to terms and conditions
-								  </label>
-								  <div class="invalid-feedback">
-									You must agree before submitting.
-								  </div>
-								</div>
-							  </div>
-							  <button class="btn btn-primary" type="submit">Submit form</button>
-							</form>
+							<p><a href="candidate/account/login/index.html">Alrady Have an Account? Login as Candidate</a></p>
 								<form action="#" method="post" class="needs-validation" novalidate>
 									<div class="login-input-box">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" class="form-control w-100" name="first-name" placeholder="First Name">
+											<input type="text" class="form-control w-100" name="first-name" placeholder="First Name" required>
+											<div class="invalid-feedback">
+											  Please choose a username.
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
 												<input type="text" class="form-control w-100" name="first-name" placeholder="Last Name" required>
+											<div class="invalid-feedback">
+											  Please choose a username.
+											</div>
 											</div>
 										</div>
 									</div>
@@ -219,37 +160,41 @@
 										<div class="col-lg-6">
 											<div class="form-group">
 												<input type="tel" class="form-control w-100" name="phone" placeholder="Phone Number" required>
+											<div class="invalid-feedback">
+											  Please choose a username.
+											</div>
 											</div>
 										</div>
-										 <div class="invalid-feedback">
-										  Please choose a username.
-										</div>
 										<div class="col-lg-6">
-											<div class="form-group">
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-												  <label class="form-check-label" for="inlineCheckbox1">Male </label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-												  <label class="form-check-label" for="inlineCheckbox2">Female </label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-												  <label class="form-check-label" for="inlineCheckbox3">Other </label>
-												</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+											  <label class="form-check-label" for="inlineRadio1">Male</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											  <label class="form-check-label" for="inlineRadio2">Female</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+											  <label class="form-check-label" for="inlineRadio3">Other</label>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="email" class="form-control w-100" name="email" placeholder="Email">
+												<input type="email" class="form-control w-100" name="email" placeholder="Email" required>
+											<div class="invalid-feedback">
+											  Please choose a username.
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-											<input type="date" class="form-control w-100" id="time" name="Select Date">
+											<input type="date" class="form-control w-100" id="time" name="Select Date" required>
+											<div class="invalid-feedback">
+											  Please choose a username.
+											</div>
 											</div>
 										</div>
 									</div>
@@ -257,6 +202,9 @@
 										<div class="col-lg-6">
 											<div class="form-group">
 												<input type="password" class="form-control w-100" name="Password" placeholder="Password" required>
+											<div class="invalid-feedback">
+											  Must be 8 characters, contain both number and letter/special character
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
@@ -264,15 +212,12 @@
 												<input type="password" class="form-control w-100" name="Cpassword" placeholder="Confirm Password" required>
 											</div>
 										</div>
-										  <div class="invalid-feedback">
-										  Please choose a username.
-										</div>
-										<span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true">Must be 8 characters, contain both number and letter/special character</span>
 									</div>
 									</div>
 									<div class="button-box">
-										<div class="login-toggle-btn d-flex">
-											<div class="button-box">
+										<div class="login-toggle-btn d-flex mb-2">
+											<a href="employer/account/register/intex.html">Click Here to Register As Employer?</a>
+											<div class="button-box w-25">
 											<button class="login-btn btn mb-2 mt-0" type="submit"><span>Register</span></button>
 										</div>
 										</div>
@@ -284,28 +229,9 @@
 										<div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-instagram me-2"></i> Sign in with Instagram</span></button></div>
 									</div>
 								</div>
-								<a href="employer/account/register/intex.html">Click Here to Register As Employer?</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 mb-4">
-						 <!-- login-register-tab-list end -->
-						<div class="login-form-container">
-							<div class="login-register-form reg-form">
-							<div class="regcon-box">
-								<h3> Use another service to log in.</h3>
-									<p>Checkout process will be quicker if you are logged In. Checkout process will be quicker if you are logged In Checkout process will be quicker if you are logged In Checkout process will be quicker if you are logged In</p>
-									<div class="button-box">
-										<p class="button-box text-right mb-4">
-										
-										<p>Enable this once you have account confirmation enabled for password reset functionality</p>
-											
-										</div>
-									</div>
-										
-									</div>
-							</div>
-						</div>
 					</div>
 			   </div>
 			  <!--end of row-->

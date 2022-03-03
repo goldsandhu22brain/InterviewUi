@@ -166,3 +166,13 @@ $('.review').owlCarousel({
     });
   }, false);
 })();
+
+
+
+
+$('body').on("click touchstart", "#Button1", function(e){
+   $("#logindisplay, #forgethide").toggle();
+});
+$('body').on("click touchstart", "#Button2", function(e){
+   $("#forgethide, #logindisplay").toggle();
+});
