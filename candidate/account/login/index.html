@@ -13,30 +13,30 @@
 
     <title>Interview - Kgetechnologies </title>
 
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
 
 
 
      <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" href="../../../assets/css/bootstrap.css">
 
-<link rel="stylesheet" href="/assets/css/mobster.css">
+<link rel="stylesheet" href="../../../assets/css/mobster.css">
 
-<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
 
 <!-- owlcarousel css -->
-<link rel="stylesheet" href="/assets/plugins/owlcarousel/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/assets/plugins/owlcarousel/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.theme.default.min.css">
 
-<link rel="stylesheet" href="/assets/css/maicons.css">
+<link rel="stylesheet" href="../../../assets/css/maicons.css">
 
-<link rel="stylesheet" href="/assets/css/animate.css">
+<link rel="stylesheet" href="../../../assets/css/animate.css">
 
 <!-- Main Style CSS (Please use minify version for better website load performance) -->
-<link rel="stylesheet" href="/assets/css/candidate-style.css">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="../../../assets/css/candidate-style.css">
+<link rel="stylesheet" href="../../../assets/css/style.css">
 <!-- Responsive css -->
-<link rel="stylesheet" href="/assets/css/responsive.css">
+<link rel="stylesheet" href="../../../assets/css/responsive.css">
 <script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -144,50 +144,57 @@
 <section class="login-main">
     <div class="container">
         <div class="row center">
-            <div class="col-lg-6 mb-4">
+            <div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
                 <!-- login-register-tab-list end -->
                 <div class="login-form-container">
                     <div class="login-register-form">
                         <h3>Candidate Login</h3>
                         <p><a href="/Employer/Account/Login">Employers/Recruiters Click Here to Login</a></p>
-
-<form action="/Candidate/Account/CandidateLogin" class="form-horizontal" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" />                            <div class="login-input-box">
-                                <label>
-                                    Email Address
-                                    <input class="w-75 form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" type="text" value="" />
-                                </label>
-                                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-
-                                <label>
-                                    PASSWORD
-
-                                    <input class="w-75 form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
-                                    <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-                                </label>
-
-                            </div>
+							<form class="needs-validation" novalidate>
+							<input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" /> 
+                               <div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="email" value="" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct email address
+									</div>
+								</div>
+								<div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct email password
+									</div>
+								</div>
                             <div class="button-box">
                                 <div class="login-toggle-btn d-flex">
-                                    <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                                    <label>Remember me</label>
+								 <div class="form-group">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+									  <label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									  </label>
+									  <div class="invalid-feedback">
+										You must agree before submitting.
+									  </div>
+									</div>
+								  </div>
                                     <div class="button-box">
                                         <button class="login-btn btn mb-2 mt-0" type="submit"><span>Login</span></button>
                                     </div>
                                 </div>
                             </div>
-</form>                        <div class="button-box">
-                            <p class="button-box text-right mb-4 justify-content-end">
+							</form>                        
+							<div class="button-box d-flex flex-sm-row flex-column-reverse justify-content-between my-2">
+							 <a class="d-block" href="/Candidate/Account/Register">Click Here to Register as Candidate</a>
                                 <a href="/Candidate/Account/ForgotPassword">Forgot your password?</a>
-                            </p>
-
+                        
                         </div>
-                        <div class="button-box">
+                        <div class="button-box bottom-btn">
                             <div class="row">
                                 <div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-google me-2"></i> Sign in with google</span></button></div>
                                 <div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-linkedin-square me-2"></i> Sign in with Linkedin</span></button></div>
                             </div>
                         </div>
-                        <p><a class="mb-2 d-block" href="/Candidate/Account/Register">Click Here to Register as Candidate</a>
+                       
 
                     </div>
                 </div>
@@ -211,7 +218,7 @@
             <div class="row testimonial-in">
                 <div class="col-12 col-md-4 position-relative">
                     <div class="test-image">
-                        <img src="/assets/img/public/testimonial.jpg" class="img-fluid" alt="Basic">
+                        <img src="../../../assets/img/public/testimonial.jpg" class="img-fluid" alt="Basic">
                         <i class="fa fa-quote-right" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -340,7 +347,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 position-relative">
-                        <img class="img-fluid" src="/assets/img/public/start.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/start.png" alt="">
                     </div>
                 </div>
             </div>
@@ -359,21 +366,21 @@
             <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
                 <div class="statsRhs">
                     <div class="statsListItem">
-                        <img class="img-fluid" src="/assets/img/public/attempted-question.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/attempted-question.png" alt="">
                         <div>
                             <div class="value">976,055,412</div>
                             <div class="label">Questions Practiced</div>
                         </div>
                     </div>
                     <div class="statsListItem">
-                        <img class="img-fluid" src="/assets/img/public/doubts-answered.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/doubts-answered.png" alt="">
                         <div>
                             <div class="value">11,898,432</div>
                             <div class="label">Tests Taken</div>
                         </div>
                     </div>
                     <div class="statsListItem">
-                        <img class="img-fluid" src="/assets/img/public/doubts-done.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/doubts-done.png" alt="">
                         <div>
                             <div class="value">29,773,051</div>
                             <div class="label">Doubts Answered</div>
@@ -482,19 +489,19 @@
     </div>
 </footer>
 
-<script src="/assets/js/bootstrap.min.js"></script>
+<script src="../../../assets/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
 <script src="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 <!-- owl carousel JS -->
-<script src="/assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
+<script src="../../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
 
 
-<script src="/assets/js/custom.js"></script>
+<script src="../../../assets/js/custom.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
-<script src="/assets/js/wow.min.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/mobster.js"></script>
+<script src="../../../assets/js/wow.min.js"></script>
+<script src="../../../assets/js/main.js"></script>
+<script src="../../../assets/js/mobster.js"></script>
 
 </body>
 </html>

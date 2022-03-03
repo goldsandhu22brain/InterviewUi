@@ -3729,7 +3729,7 @@ background-color: #F5F7F9;
     font-size: 14px;
 }
 .login-toggle-btn {
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 .login-toggle-btn input {
@@ -3738,6 +3738,9 @@ background-color: #F5F7F9;
 }
 .login-toggle-btn label {
     margin-bottom: 0px;
+}
+.login-register-form .bottom-btn button {
+    background: #1a73e8;
 }
 .login-toggle-btn .button-box {
     width: 25%;
