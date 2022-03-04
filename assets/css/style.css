@@ -3805,7 +3805,7 @@ background-color: #F5F7F9;
     padding: 15px 10px;
 }
 .tablecompany-sec table.dataTable thead th, 
-.tablecompany-sec table.dataTable thead td {
+.tablecompany-sec table.dataTable thead td { 
     padding: 20px 15px;
 }
 .tablecompany-sec .dataTables_paginate a.paginate_button.current, 
