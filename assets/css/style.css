@@ -3721,8 +3721,9 @@ background-color: #F5F7F9;
     font-family: 'MyriadProRegular';
 	    margin-top: 20px;
 }
-.login-input-box input {
-    color: #131212;
+.login-input-box input, 
+.login-input-box select {
+    color: #737478;
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     border-radius: 2px;
@@ -3771,4 +3772,66 @@ background-color: #F5F7F9;
     font-weight: 400;
     line-height: 1.5;
 }
-
+.tablecompany-sec .dataTables_wrapper div.dataTables_filter {
+    float: right;
+}
+.tablecompany-sec #example_length {
+    float: left;
+}
+.tablecompany-sec .dataTables_wrapper input[type="search"], 
+.tablecompany-sec .dataTables_wrapper input[type="text"], 
+.tablecompany-sec .dataTables_wrapper select {
+    border: 1px solid #e2e2e2;
+    padding: 0.3rem 0.5rem;
+    color: #715d5d;
+    border-radius: 5px;
+}
+.tablecompany-sec .card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 1.25rem;
+    box-shadow: 0px 12px 23px 0px rgb(160 44 250 / 4%);
+    height: calc(100% - 30px);
+}
+.tablecompany-sec .dataTables_length, 
+.tablecompany-sec .dataTables_filter {
+    margin: 10px 0px;
+}
+.tablecompany-sec table.dataTable tbody td {
+    font-size: 16px;
+    padding: 15px 10px;
+}
+.tablecompany-sec table.dataTable thead th, 
+.tablecompany-sec table.dataTable thead td {
+    padding: 20px 15px;
+}
+.tablecompany-sec .dataTables_paginate a.paginate_button.current, 
+.tablecompany-sec .dataTables_paginate a.paginate_button.current:focus, 
+.tablecompany-sec .dataTables_paginate a.paginate_button.current:hover {
+    background-color: #888;
+    border-color: #888;
+    color: #fff;
+}
+.tablecompany-sec .dataTables_paginate a.paginate_button.current {
+    color: #E3E3E3;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+}
+.tablecompany-sec .dataTables_paginate a.paginate_button {
+    border: 0;
+    border-radius: 30px !important;
+    transition: all .3s;
+    padding: 0px 11px;
+    margin: 0 3px;
+    min-width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #535e69;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+}
