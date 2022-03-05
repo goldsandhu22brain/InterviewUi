@@ -3723,7 +3723,7 @@ background-color: #F5F7F9;
 }
 .login-input-box input, 
 .login-input-box select {
-    color: #737478;
+    color: #000;
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     border-radius: 2px;
@@ -3811,27 +3811,40 @@ background-color: #F5F7F9;
 .tablecompany-sec .dataTables_paginate a.paginate_button.current, 
 .tablecompany-sec .dataTables_paginate a.paginate_button.current:focus, 
 .tablecompany-sec .dataTables_paginate a.paginate_button.current:hover {
-    background-color: #888;
-    border-color: #888;
+    background-color: #26252f;
+    border-color: #26252f;
     color: #fff;
 }
 .tablecompany-sec .dataTables_paginate a.paginate_button.current {
     color: #E3E3E3;
-    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
 }
 .tablecompany-sec .dataTables_paginate a.paginate_button {
     border: 0;
     border-radius: 30px !important;
     transition: all .3s;
-    padding: 0px 11px;
-    margin: 0 3px;
+    margin: 10px 3px;
     min-width: 30px;
     text-align: center;
     height: 30px;
     line-height: 30px;
-    color: #535e69;
     cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
-    background: transparent;
+	display: inline-block;
+}
+#example_info {
+    display: none;
+}
+.tablecompany-sec .paginate_button.previous, 
+.tablecompany-sec .paginate_button.next {
+    background: #ea354b;
+    color: #fff;
+    padding: 0px 15px;
+}
+.tablecompany-sec  .status-btn {
+    cursor: inherit !important;
+}
+.tablecompany-sec .dataTables_wrapper .dataTables_paginate {
+    padding: 10px 0;
 }

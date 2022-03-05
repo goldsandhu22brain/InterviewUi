@@ -313,3 +313,148 @@ a.article, a.article:hover {
     right: 0px;
     top: 0px;
 }
+
+ #regForm {
+     background-color: #ffffff;
+     margin: 0px auto;
+     padding: 40px;
+     border-radius: 10px
+ }
+
+
+.step-form input.invalid {
+     background-color: #ffdddd
+ }
+
+ .step-form .tab {
+     display: none
+ }
+
+ .step-form button {
+     background-color: #4CAF50;
+     color: #ffffff;
+     border: none;
+     padding: 10px 20px;
+     font-size: 17px;
+     cursor: pointer
+ }
+
+ .step-form button:hover {
+     opacity: 0.8
+ }
+
+ .step-form #prevBtn {
+     background-color: #bbbbbb
+ }
+
+ .step-form .step {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbbbbb;
+     border: none;
+     border-radius: 50%;
+     display: inline-block;
+     opacity: 0.5
+ }
+
+ .step-form .step.active {
+     opacity: 1
+ }
+
+ .step.finish {
+     background-color: #4CAF50
+ }
+
+ .step-form .all-steps {
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 30px
+ }
+
+ .step-form .thanks-message {
+     display: none
+ }
+
+ .step-form .container {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     margin-bottom: 12px;
+     cursor: pointer;
+     font-size: 22px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none
+ }
+
+ .step-form .container input[type="radio"] {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer
+ }
+
+ .step-form .checkmark {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 25px;
+     width: 25px;
+     background-color: #eee;
+     border-radius: 50%
+ }
+
+ .step-form .container:hover input~.checkmark {
+     background-color: #ccc
+ }
+
+ .step-form .container input:checked~.checkmark {
+     background-color: #2196F3
+ }
+
+ .step-form .checkmark:after {
+     content: "";
+     position: absolute;
+     display: none
+ }
+
+ .step-form .container input:checked~.checkmark:after {
+     display: block
+ }
+
+ .step-form .container .checkmark:after {
+     top: 9px;
+     left: 9px;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background: white
+ }
+
+  .step-form .tab.input-fields input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.step-form h3#register {
+    font-family: 'MyriadProBold';
+}
+.step-form .tab.step-check input {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    vertical-align: top;
+    margin-right: 10px;
+}
