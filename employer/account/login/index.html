@@ -127,64 +127,91 @@
 	 </header>
 
    <!--Banner Start-->
-		<section class="login-main">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 mb-4">
-						 <!-- login-register-tab-list end -->
-						<div class="login-form-container">
-							<div class="login-register-form">
-							<h3>Login</h3>
-							<p>Use a local account to log in.</p>
-								<form action="#" method="post">
-									<div class="login-input-box">
-									<label>EMAIL ADDRESS
-										<input type="emial" class="w-75 form-control" name="user-email" placeholder="timdavidson@gmail.com"></label>
-										<label>PASSWORD
-										<input type="password" class="w-75 form-control" name="user-password" placeholder="Password"></label>
+	<section class="login-main">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
+                <!-- login-register-tab-list end -->
+                <div class="login-form-container">
+                    <div class="login-register-form" id="logindisplay">
+                        <h3>Candidate Login</h3>
+                        <p><a href="/Employer/Account/Login">Employers/Recruiters Click Here to Login</a></p>
+							<form class="needs-validation" novalidate>
+							<input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" /> 
+                               <div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="email" value="" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct email address
 									</div>
-										<div class="button-box">
-										<p class="button-box text-right mb-4 justify-content-end">
-										<a href="#">Forget your password?</a></p></div>
-									<div class="button-box">
-										<div class="login-toggle-btn d-flex">
-											<input type="checkbox">
-											<label>Remember me</label>
-											<div class="button-box">
-											<button class="login-btn btn mb-2 mt-0" type="submit"><span>Login</span></button>
-										</div>
-										</div>
+								</div>
+								<div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct password
 									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 mb-4">
-						 <!-- login-register-tab-list end -->
-						<div class="login-form-container">
-							<div class="login-register-form reg-form">
-							<div class="regcon-box">
-								<h3> Use another service to log in.</h3>
-								<p>Checkout process will be quicker if you are logged In</p>
-								<a href="employer/account/register/index.html" class="mb-2 d-block">Register as a new user</a>
-									<p>Enable this once you have account confirmation enabled for password reset functionality</p>
-									<a href="candidate/account/login/index.html">Click Here to Login As Candidate?</a>
+								</div>
+                            <div class="button-box">
+                                <div class="login-toggle-btn d-flex">
+								 <div class="form-group">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+									  <label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									  </label>
+									  <div class="invalid-feedback">
+										You must agree before submitting.
+									  </div>
 									</div>
-										<div class="button-box">
-											<div class="row">
-											<div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-google me-2"></i> Sign in with google</span></button></div>
-											<div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-instagram me-2"></i> Sign in with Instagram</span></button></div>
-										</div>
-										</div>
+								  </div>
+                                    <div class="button-box w-25">
+                                        <button class="login-btn btn mb-2 mt-0" type="submit"><span>Login</span></button>
+                                    </div>
+                                </div>
+                            </div>
+							</form>                        
+							<div class="button-box d-flex flex-sm-row flex-column-reverse justify-content-between my-3">
+							 <a class="d-block" href="/Candidate/Account/Register">Click Here to Register as Employer</a>
+                                <input id="Button1" class="inputbutton" type="button" placeholder="Forgot your password?" value="Forgot your password?" onclick="switchVisible();"/>
+                        
+                        </div>
+                        <div class="button-box bottom-btn">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                     <button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-linkedin-square me-2"></i> Sign in with Linkedin</span></button>
+                                </div>
+                                 <div class="col-lg-6">
+                                    <button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-google me-2"></i> Sign in with google</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="login-register-form" id="forgethide">
+                        <h3>Forgot your password?</h3>
+                        <p>  <input id="Button2" class="inputbutton" type="button" placeholder="Click Here to Login as Candidate" value="Click Here to Login as Candidate" onclick="switchVisible();"/></p>
+							<form class="needs-validation" novalidate>
+							<input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" /> 
+                               <div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="email" value="" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct email address
 									</div>
-							</div>
-						</div>
-					</div>
-			   </div>
-			  <!--end of row-->
-			</div>
-			<!--end of container-->
-		  </section>
+								</div>
+                            <div class="button-box">
+                                <div class="login-toggle-btn d-flex justify-content-end mb-2">
+                                    <div class="button-box">
+                                        <button class="login-btn btn mb-2 mt-0" type="submit"><span>Reset Password</span></button>
+                                    </div>
+                                </div>
+                            </div>
+							</form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
 		<!--Banner Start-->
 			<section class="testimonial-main heading pb-4">
 			  <div class="container">
