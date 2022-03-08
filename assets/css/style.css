@@ -609,7 +609,6 @@ transition: all ease-in-out .3s;
 	background-image: radial-gradient(49% 0,#4e4c62 1%,#26252f 60%);
     color: #fff;
     position: relative;
-    margin-top: 120px;
 }
 .footer-main .wiedget-title {
     color: #ffffff;
@@ -3847,4 +3846,8 @@ background-color: #F5F7F9;
 }
 .tablecompany-sec .dataTables_wrapper .dataTables_paginate {
     padding: 10px 0;
+}
+.admin-main {
+    background: #26252f;
+    padding: 2.3rem 0 2.3rem 0;
 }

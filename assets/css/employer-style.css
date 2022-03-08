@@ -68,42 +68,32 @@ a {
     width: 100%;
 }
 
-
 #sidebar {
-    min-width: 280px;
-    max-width: 280px;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
     background: #1f282e;
     color: #fff;
-    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: bottom left;
-	display: flex;
+    transition: all 0.3s;
+}
+#sidebar .mCSB_container {
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
 }
-
 #sidebar.active {
     margin-left: -280px;
-    transform: rotateY(100);
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
     background: #27333a;
 }
-#sidebarCollapse i.fa.fa-angle-right {
-    display: none;
-}
-#sidebarCollapse.active i.fa.fa-angle-left {
-    display: none;
-}
-#sidebarCollapse.active {
-    left: 0;
-    border-radius: 0px 5px 5px 0px;
-}
-#sidebarCollapse.active i.fa.fa-angle-right {
-    display: block;
-}
+
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
@@ -116,29 +106,67 @@ a {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 16px;
+    display: block;
+    background: #3b4347;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    background: #0d6efd;
+    text-decoration: none;
+}
+#sidebarCollapse i {
+    font-size: 30px;
+    color: #fff;
+}
+#sidebarCollapse {
+    width: 20px;
+    height: 50px;
+    background: #dc3545;
+    cursor: pointer;
+    position: absolute;
+    left: -20px;
+    top: 14rem;
+    z-index: 999999;
+    border-radius: 5px 0px 0px 5px;
+}
+#sidebarCollapse i.fa.fa-angle-right {
+    display: none;
+}
+#content.active #sidebarCollapse i.fa.fa-angle-left {
+    display: none;
+}
+#content.active #sidebarCollapse  {
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+#content.active #sidebarCollapse i.fa.fa-angle-right {
     display: block;
 }
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
     color: #fff;
-    background: #26252f;
+    background: #6d7fcc;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
 }
 
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
 
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #26252f;
+    background: #6d7fcc;
 }
 
 ul.CTAs {
@@ -158,100 +186,51 @@ a.download {
     color: #7386D5;
 }
 
-a.article, a.article:hover {
+a.article,
+a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
 
-
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+
 #content {
-    width: 100%;
+    width: calc(100% - 280px);
     padding: 10px;
     min-height: 100vh;
     transition: all 0.3s;
-    position: relative;
-}
-
-#sidebarCollapse i {
-    font-size: 30px;
-    color: #fff;
-}
-#sidebarCollapse {
-    width: 20px;
-    height: 50px;
-    background: #dc3545;
-    cursor: pointer;
     position: absolute;
-    left: -20px;
-    top: 14rem;
-    border-radius: 5px 0px 0px 5px;
-}
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-    transition-delay: 0.2s;
+    top: 0;
+    right: 0;
 }
 
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px, 2px);
+#content.active {
+    width: 100%;
 }
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-}
-
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -280px;
-        transform: rotateY(90deg);
     }
     #sidebar.active {
         margin-left: 0;
-        transform: none;
     }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
+    #content {
+        width: 100%;
     }
-    #sidebarCollapse.active span {
-        margin: 0 auto;
+    #content.active {
+        width: calc(100% - 280px);
     }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
+    #sidebarCollapse span {
+        display: none;
     }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-
 }
-
 .users .owl-item img {
     border: 3px solid #0d6efd;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 30%);
@@ -274,14 +253,15 @@ a.article, a.article:hover {
     background: #dc3545;
     box-shadow: none;
     border-radius: 0px;
+    z-index: 1;
 }
 .number-users .accordion-button:not(.collapsed)::after, .accordion-button::after {
     filter: brightness(20);
 }
-.users .owl-nav.disabled {
+.users .owl-nav.disabled, .users .owl-nav {
     display: block !important;
 }
-.users .owl-nav.disabled {
+.users .owl-nav.disabled, .users .owl-nav {
     display: flex!important;
     justify-content: space-between;
     position: absolute;
@@ -314,147 +294,134 @@ a.article, a.article:hover {
     top: 0px;
 }
 
- #regForm {
-     background-color: #ffffff;
-     margin: 0px auto;
-     padding: 40px;
-     border-radius: 10px
- }
-
+#regForm {
+    background-color: #ffffff;
+    padding: 0;
+}
 
 .step-form input.invalid {
-     background-color: #ffdddd
+     background-color: #ffdddd;
  }
 
  .step-form .tab {
-     display: none
+     display: none;
+    padding: 15px;      
  }
 
  .step-form button {
      background-color: #4CAF50;
-     color: #ffffff;
-     border: none;
-     padding: 10px 20px;
-     font-size: 17px;
-     cursor: pointer
  }
 
  .step-form button:hover {
-     opacity: 0.8
+     opacity: 0.8;
  }
 
  .step-form #prevBtn {
-     background-color: #bbbbbb
+     background-color: #bbbbbb;
  }
 
  .step-form .step {
-     height: 15px;
-     width: 15px;
      margin: 0 2px;
      background-color: #bbbbbb;
-     border: none;
-     border-radius: 50%;
-     display: inline-block;
-     opacity: 0.5
  }
 
  .step-form .step.active {
-     opacity: 1
+     opacity: 1;
  }
 
  .step.finish {
-     background-color: #4CAF50
+     background-color: #4CAF50;
  }
 
  .step-form .all-steps {
      text-align: center;
-     margin-top: 30px;
-     margin-bottom: 30px
+     display: none;
  }
 
  .step-form .thanks-message {
-     display: none
+     display: none;
+        padding: 10px;
  }
 
- .step-form .container {
-     display: block;
-     position: relative;
-     padding-left: 35px;
-     margin-bottom: 12px;
-     cursor: pointer;
-     font-size: 22px;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none
- }
-
- .step-form .container input[type="radio"] {
-     position: absolute;
-     opacity: 0;
-     cursor: pointer
- }
-
- .step-form .checkmark {
-     position: absolute;
-     top: 0;
-     left: 0;
-     height: 25px;
-     width: 25px;
-     background-color: #eee;
-     border-radius: 50%
- }
-
- .step-form .container:hover input~.checkmark {
-     background-color: #ccc
- }
-
- .step-form .container input:checked~.checkmark {
-     background-color: #2196F3
- }
-
- .step-form .checkmark:after {
-     content: "";
-     position: absolute;
-     display: none
- }
-
- .step-form .container input:checked~.checkmark:after {
-     display: block
- }
-
- .step-form .container .checkmark:after {
-     top: 9px;
-     left: 9px;
-     width: 8px;
-     height: 8px;
-     border-radius: 50%;
-     background: white
- }
-
-  .step-form .tab.input-fields input {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+h5.ques-number {
+    background: #0d6efd;
+    font-weight: 700;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
 }
+
 .step-form h3#register {
     font-family: 'MyriadProBold';
 }
-.step-form .tab.step-check input {
-    width: 20px;
-    height: 20px;
-    margin-top: 6px;
-    vertical-align: top;
-    margin-right: 10px;
+
+.step-form .tab.image-select img.img-fluid {
+    width: 100px;
+}
+.step-form .tab h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.mark-question {
+    background: #1f282e;
+    color: #fff;
+    padding: 20px;
+}
+.mark-question ul.list-inline li span {
+    background: #585252;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.mark-question ul.list-inline li span.correct-ans {
+    background: #02ca36;
+}
+.mark-question ul.list-inline li span.wrong-ans {
+    background: #fa6101;
+}
+.users .owl-stage {
+    margin: 0 auto;
+}
+.code-panel {
+    background: #f7f7f7;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+#nextprevious {
+    padding: 10px;
+}
+.code-panel {
+    display: none;
+}
+.markques {
+    margin-left: 1rem;
+}
+
+.markques li {
+    position: relative;
+    padding-right: 20px;
+}
+.markques li:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: -18px;
+    top: 6px;
+}
+.ques-skip:before {
+    background: #fa6101;
+}
+
+.yes-ans:before {
+    background: #02ca36;
+}
+.not-ans:before {
+    background: #585252;   
 }
