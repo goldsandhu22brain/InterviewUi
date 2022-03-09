@@ -3851,3 +3851,6 @@ background-color: #F5F7F9;
     background: #26252f;
     padding: 2.3rem 0 2.3rem 0;
 }
+.grecaptcha-badge {
+    display: none !important;
+}
