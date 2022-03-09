@@ -1,5 +1,6 @@
 
 
+
 $(document).ready(function(){
 $('.users').owlCarousel({
     loop:false,
@@ -46,6 +47,48 @@ $(document).ready(function(){
     });
 });
 
+
+
+
+
+
+
+
+ function allowDrop(ev){
+        ev.preventDefault();
+      }
+      function drag(ev){
+        ev.dataTransfer.setData("Text",ev.target.id);
+      }
+      function drop(ev){
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text");
+        ev.target.parentNode.replaceChild(document.getElementById(data), ev.target);
+        document.getElementById(data).className = "";
+      }
+      
+      document.querySelectorAll('i.cancel').forEach(function(el) {
+        el.addEventListener('click', remove);
+      });
+      
+      function remove() {
+        parentElement = this.parentElement.cloneNode(true);  parentElement.querySelector('i.cancel').addEventListener('click',remove)
+        parentElement.classList.add('draggable');  document.querySelector('.toolbox').appendChild(parentElement);
+        var div = document.createElement("div");
+        div.classList.add("droppable");
+        div.ondragover = allowDrop;
+        div.ondrop = drop;
+        div.ondragover = allowDrop;
+
+        this.parentElement.replaceWith(div);   
+      }
+
+
+
+
+
+
+
 var timerVar = setInterval(countTimer, 1000);
 var totalSeconds = 0;
 function countTimer() {
@@ -62,6 +105,12 @@ function countTimer() {
            document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
         }
 
+
+
+
+
+
+
 /* global bootstrap: false */
 (function () {
   'use strict'
@@ -70,6 +119,8 @@ function countTimer() {
     new bootstrap.Tooltip(tooltipTriggerEl)
   })
 })()
+
+
 
 //your javascript goes here
 var currentTab = 0;
@@ -121,9 +172,6 @@ var x, y, i, valid = true;
 x = document.getElementsByClassName("tab");
 y = x[currentTab].getElementsByTagName("input");
 for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" invalid" ; valid=false; } } if (valid) { document.getElementsByClassName("step")[currentTab].className +=" finish" ; } return valid; } function fixStepIndicator(n) { var i, x=document.getElementsByClassName("step"); for (i=0; i < x.length; i++) { x[i].className=x[i].className.replace(" active", "" ); } x[n].className +=" active" ; }
-
-
-
 
 
 

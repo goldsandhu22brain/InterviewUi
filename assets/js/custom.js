@@ -177,3 +177,8 @@ $('body').on("click touchstart", "#Button2", function(e){
    $("#forgethide, #logindisplay").toggle();
 });
 
+$(document).ready(function(){
+$("input").val()
+
+});
+

@@ -3774,7 +3774,7 @@ background-color: #F5F7F9;
 .tablecompany-sec .dataTables_wrapper div.dataTables_filter {
     float: right;
 }
-.tablecompany-sec #example_length {
+.tablecompany-sec .dataTables_length {
     float: left;
 }
 .tablecompany-sec .dataTables_wrapper input[type="search"], 
@@ -3801,7 +3801,7 @@ background-color: #F5F7F9;
 }
 .tablecompany-sec table.dataTable tbody td {
     font-size: 16px;
-    padding: 15px 10px;
+    padding: 15px 5px;
 }
 .tablecompany-sec table.dataTable thead th, 
 .tablecompany-sec table.dataTable thead td { 
@@ -3853,4 +3853,26 @@ background-color: #F5F7F9;
 }
 .grecaptcha-badge {
     display: none !important;
+}
+#company-table_wrapper li.list-group-item {
+    word-break: break-word;
+}
+.bootstrap-tagsinput .tag {
+    color: #000;
+    background: #e9ecef;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 14px;
+    margin: 2px;
+}
+.login-input-box .bootstrap-tagsinput {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid #E1E1E1;
+    padding: .375rem .75rem;
+}
+.login-input-box .bootstrap-tagsinput input {
+    border: 0px;
 }
