@@ -29,6 +29,9 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    header.fixed-top {
+    background: #000;
+}
 .heightb {
     height: 470px;
 }
@@ -118,6 +121,9 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    header.fixed-top {
+    background: #000;
+}
 #sidebarCollapse {
     left: 0px;
     z-index: 9999;

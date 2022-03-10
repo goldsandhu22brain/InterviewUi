@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function(){
 $('.users').owlCarousel({
     loop:false,

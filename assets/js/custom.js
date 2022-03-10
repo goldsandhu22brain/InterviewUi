@@ -1,3 +1,19 @@
+
+
+
+
+/* Sticky Header */
+$(window).scroll(function() {
+ if ($(this).scrollTop() > 100){  
+    $('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});
+
+
+
 // // updated 2019
 // const input = document.getElementById("search-input");
 // const searchBtn = document.getElementById("search-btn");
@@ -182,3 +198,9 @@ $("input").val()
 
 });
 
+$(document).ready(function(){
+wow = new WOW();
+
+wow.init();
+    
+    });
