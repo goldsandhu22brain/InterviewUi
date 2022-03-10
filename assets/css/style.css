@@ -3854,9 +3854,7 @@ background-color: #F5F7F9;
 .grecaptcha-badge {
     display: none !important;
 }
-#company-table_wrapper li.list-group-item {
-    word-break: break-word;
-}
+
 .bootstrap-tagsinput .tag {
     color: #000;
     background: #e9ecef;
