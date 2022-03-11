@@ -4306,3 +4306,7 @@ background-color: #1f01e5;
 .light .bodyContent {
     background: #FFF;
 }
+.tablehead li {
+    font-size: 16px;
+    white-space: nowrap;
+} 
