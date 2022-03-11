@@ -20,7 +20,8 @@
 	<link rel="stylesheet" href="../../../assets/css/mobster.css">
   
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
-
+    
+	<link rel="stylesheet" href="../../../assets/css/bootstrap-tagsinput.css">
 	 <!-- owlcarousel css -->
 	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.theme.default.min.css">
@@ -30,7 +31,6 @@
 	<link rel="stylesheet" href="../../../assets/css/animate.css">
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
-    <link rel="stylesheet" href="../../../assets/css/candidate-style.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="../../../assets/css/responsive.css">
@@ -40,7 +40,7 @@
 </head>
 <body>
 <!--header start-->
-    <header class="fixed-top">
+     <header class="fixed-top">
 
 	 <!--End header start-->
 		  <nav class="navbar py-2 navbar-expand-lg navbar-dark">
@@ -74,7 +74,7 @@
 				  <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarScroll">
-				<ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+				  <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
 					  <a class="nav-link" href="service.html">My Profile</a>
 					</li>
@@ -127,108 +127,104 @@
 			  </div>
 			</nav>
 	 </header>
-
-   <!--Banner Start-->
-		<section class="login-main">
+   <section class="admin-main">
 			<div class="container">
 				<div class="row">
-					 <div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
+              </div>
+			  <!--end of row-->
+			</div>
+			<!--end of container-->
+		  </section>      
+                    
+   <!--Banner Start-->
+		<section class="my-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
 						 <!-- login-register-tab-list end -->
 						<div class="login-form-container">
 							<div class="login-register-form">
-							<h3>Register</h3>
-							<p><a href="employer/accout/login/index.html">Already Have an Account? Login as Employer</a></p>
-								<form action="#" method="post">
+							<h3>My Profile</h3>
+							<p>Update Account</p>
+								<form action="#" method="post" class="needs-validation" novalidate>
 									<div class="login-input-box">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" class="form-control w-100" name="first-name" placeholder="First Name">
+											<input type="text" class="form-control w-100" name="first-name" placeholder="First Name" required>
+											<div class="invalid-feedback">
+											  Please choose a name.
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" class="form-control w-100" name="first-name" placeholder="Last Name">
+												<input type="text" class="form-control w-100" name="first-name" placeholder="Last Name" required>
+											<div class="invalid-feedback">
+											  Please choose a name.
+											</div>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="tel" class="form-control w-100" name="phone" placeholder="Phone Number">
+												<input type="tel" class="form-control w-100" name="phone" placeholder="Phone Number" required>
+											<div class="invalid-feedback">
+											  Please fill contact number.
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="email" class="form-control w-100" name="email" placeholder="Email">
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+											  <label class="form-check-label" for="inlineRadio1">Male</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											  <label class="form-check-label" for="inlineRadio2">Female</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+											  <label class="form-check-label" for="inlineRadio3">Other</label>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="password" class="form-control w-100" name="Password" placeholder="Password">
+												<input type="email" class="form-control w-100" name="email" placeholder="Email" required>
+											<div class="invalid-feedback">
+											  Please fill correct email address.
+											</div>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="password" class="form-control w-100" name="Cpassword" placeholder="Confirm Password">
+											<input type="date" class="form-control w-100" id="time" name="Select Date" required>
+											<div class="invalid-feedback">
+											  Please select date.
+											</div>
 											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-6">
+                                        <div class="col-lg-12">
 											<div class="form-group">
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-												  <label class="form-check-label" for="inlineCheckbox1">Male </label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-												  <label class="form-check-label" for="inlineCheckbox2">Female </label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-												  <label class="form-check-label" for="inlineCheckbox3">Other </label>
-												</div>
+                                            <input type="text" name="tags" class="form-control w-100" placeholder="Skills" value=".Net, c#, UITEsting" data-role="tagsinput" required>
+											<div class="invalid-feedback">
+											  Please Enter Tags.
+											</div>
 											</div>
 										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-											<input type="datetime-local" class="form-control w-100" id="birthdaytime" name="Select Date">
-											</div>
-										</div>
-									</div>
-									
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="text" class="form-control w-100" name="cname" placeholder="Company Name">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-												<button class="login-btn btn mb-0 mt-0 p-1" type="submit"><span>Create company</span></button>
-											</div>
-										</div>
-										<p>if no company exists in drop down, user can type company and register, we need to crreate an entry. Fix the Jquery to auto populate the company names which is coming as jsonCompany Name</p>
 									</div>
 									</div>
 									<div class="button-box">
-										<div class="login-toggle-btn d-flex mb-2">
-                                            <a href="employer/account/register/intex.html">Click Here to Register As Employer?</a>
+										<div class="login-toggle-btn d-flex mb-2 justify-content-end">
 											<div class="button-box w-25">
-											<button class="login-btn btn mb-2 mt-0" type="submit"><span>Register</span></button>
+											<button class="login-btn btn mb-2 mt-0" type="submit"><span>Update</span></button>
 										</div>
 										</div>
 									</div>
 								</form>
-                                <div class="button-box">
-                                    <div class="row">
-                                        <div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-google me-2"></i> Sign in with google</span></button></div>
-                                        <div class="col-lg-6"><button class="login-btn btn mb-2 mt-0" type="submit"><span><i class="fa fa-instagram me-2"></i> Sign in with Instagram</span></button></div>
-                                    </div>
-                                </div>
 							</div>
 						</div>
 					</div>
@@ -238,7 +234,7 @@
 			<!--end of container-->
 		  </section>
 		<!--Banner Start-->
-			
+
 		<footer class="footer-main">
 		  <div class="container">
 			  <div class="row">
@@ -303,9 +299,9 @@
 	<script src="../../../assets/js/jquery-3.6.0.min.js"></script>
 	  <!-- Bootstrap JS -->
 	<script src="../../../assets/js/bootstrap.min.js"></script>
+	<script src="../../../assets/js/bootstrap-tagsinput.min.js"></script>
 	 <!-- owl carousel JS -->
 	<script src="../../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
-	
 	
     <script src="../../../assets/js/custom.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
