@@ -204,3 +204,26 @@ wow = new WOW();
 wow.init();
     
     });
+
+
+
+
+function myFunction() {
+  var input, filter, div, span, li, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myTable");
+  span = div.getElementsByTagName("span");
+  for (i = 0; i < span.length; i++) {
+    li = span[i].getElementsByTagName("li")[0];
+    if (li) {
+      txtValue = li.textContent || li.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        span[i].style.display = "";
+      } else {
+        span[i].style.display = "none";
+      }
+    }       
+  }
+}
+
