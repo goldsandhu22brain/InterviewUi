@@ -43,30 +43,30 @@ $(window).scroll(function() {
 //
 
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-// $('.quiz').owlCarousel({
-//     loop:true,
-// 	center: true,
-// 	autoplay:true,
-//     margin:20,
-//     nav:false,
-// 	dots: false,
-// 	autoplayTimeout:4000,
-//     autoplayHoverPause:true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },
-//         1000:{
-//             items:5
-//         }
-//     }
-// });
-// });
+$('.quiz').owlCarousel({
+    loop:true,
+	center: true,
+	autoplay:true,
+    margin:20,
+    nav:false,
+	dots: false,
+	autoplayTimeout:4000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+});
 
 $(document).ready(function(){
 $('.review').owlCarousel({

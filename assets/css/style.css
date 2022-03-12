@@ -31,6 +31,9 @@ body {
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+}
 .top-bar {
     position: relative;
     background-color: #002856;
@@ -1194,9 +1197,9 @@ border-radius: 5px 30px 5px 5px;
 45deg, #431991, #885edb);
 }
 
-	.course-main .wpb_column:nth-child(odd) .dt-sc-icon-box.type2.custom-style:before { position: absolute; content: ""; display: block; background-image: url(images/bottom-arrow.png); width: 100%; height: 80px; bottom: 10%; left: 0;     background-repeat: no-repeat;}
+	.course-main .wpb_column:nth-child(odd) .dt-sc-icon-box.type2.custom-style:before { position: absolute; content: ""; display: block; background-image: url(../img/public/bottom-arrow.png); width: 100%; height: 80px; bottom: 10%; left: 0;     background-repeat: no-repeat;}
 
-	.course-main .wpb_column:nth-child(even) .dt-sc-icon-box.type2.custom-style:before { position: absolute; content: ""; display: block; background-image: url(images/top-arrow.png); width: 100%; height: 83px; top: 0; left: 0;     background-repeat: no-repeat;}
+	.course-main .wpb_column:nth-child(even) .dt-sc-icon-box.type2.custom-style:before { position: absolute; content: ""; display: block; background-image: url(../img/public/top-arrow.png); width: 100%; height: 83px; top: 0; left: 0;     background-repeat: no-repeat;}
 
 	.course-main .wpb_column:nth-child(odd) .dt-sc-icon-box.type2.custom-style.last:before,
 	.course-main .wpb_column:nth-child(even) .dt-sc-icon-box.type2.custom-style.last:before { display: none; }
@@ -1344,7 +1347,7 @@ position: relative;
     margin-bottom: 10px;
 }
 .feature-service:before {
-    background: url(images/dashed-arrow.png);
+    background: url(../img/public/dashed-arrow.png);
     content: "";
     position: absolute;
     width: 100%;
