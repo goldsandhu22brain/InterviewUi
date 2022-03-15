@@ -4317,3 +4317,9 @@ background-color: #1f01e5;
 .tablecompany-sec p {
     margin-bottom: 0;
 }
+.btn-fab span {
+    line-height: 1.8;
+}
+.note-editor.note-frame .dropdown-toggle::after {
+    display: none;
+}

@@ -29,6 +29,9 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .btn-req {
+    margin-bottom: 10px;
+}
     header.fixed-top {
     background: #000;
 }
@@ -69,9 +72,6 @@
 .toggle-top,
 header #content {
     display: none;
-}
-header .navbar-collapse {
-    background: #2c6e73;
 }
 header.fixed-top.sticky .navbar-dark .navbar-toggler {
     filter: brightness(0%);
@@ -121,6 +121,9 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+.btn-req {
+    margin-bottom: 10px;
+}
     header.fixed-top {
     background: #000;
 }

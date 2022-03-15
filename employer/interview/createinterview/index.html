@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+	<meta name="description" content="Mobile Application HTML5 Template">
+
+	<meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+
+	 <title>Interview - Brainmeasures </title>
+
+	<link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../../assets/css/bootstrap.css">
+
+	<link rel="stylesheet" href="../../../assets/css/mobster.css">
+  
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+	 <!-- owlcarousel css -->
+	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" href="../../../assets/css/maicons.css">
+	
+	<link rel="stylesheet" href="../../../assets/css/animate.css">
+
+    <!-- Main Style CSS (Please use minify version for better website load performance) -->
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+	
+	<script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
+
+</head>
+<body>
+<!--header start-->
+     <header class="fixed-top">
+
+	 <!--End header start-->
+		  <nav class="navbar py-2 navbar-expand-lg navbar-dark">
+			  <div class="container-fluid">
+				<div class="toggle-top">
+					<button class="btn navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					  <div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brad" href="index.html">Brainmeasures.</a></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					  </div>
+					  <div class="offcanvas-body">
+						<div class="dropdown mt-3">
+						  <ul>
+							<li><a class="dropdown-item" href="#">Education</a></li>
+							<li><a class="dropdown-item" href="#">Community</a></li>
+							<li><a class="dropdown-item" href="#">Library</a></li>
+							<li><a class="dropdown-item" href="#">Product</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+			  
+			  
+				<a class="navbar-brand" href="index.html">Brainmeasures.</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="CompanyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/Company/Details">View All</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Company/Create">Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="UserDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage Users
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/AdminUsers">Manage Admins</a></li>
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CompanyUsers">Company Users</a></li>
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CandidateUsers">Candidate Users</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="InterviewDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage Interview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/Interview/AdminUsers">All Interviews</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Interview/CompanyUsers">Create Interview</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Interview/CandidateUsers">Manage Interview</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav">
+                        <li class="list-inline-item nav-item ms-0">
+                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Employer/Profile">My Profile</a>
+                        </li>
+                    <li class="list-inline-item nav-item ms-0">
+                        <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Request a demo</a>
+                    </li>
+                        <li class="list-inline-item nav-item ms-0">
+                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Home/LogOff">LogOut</a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+			  </div>
+			</nav>
+	 </header>    
+                    
+        <section class="login-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-6 offset-lg-3">
+						 <!-- login-register-tab-list end -->
+						<div class="login-form-container">
+							<div class="login-register-form">
+							<h3>Create Interview.</h3>
+								<form action="#" method="post" class="needs-validation mt-3" novalidate="">
+									<div class="login-input-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+											<input type="text" class="form-control w-100" name="company" placeholder="Company Name" required="">
+											<div class="invalid-feedback">
+											  Please enter a Company Name.
+											</div>
+											</div>
+										</div>
+                                        <div class="col-lg-6">
+											<div class="form-group">
+											<input type="text" class="form-control w-100" name="candidate-name" placeholder="Candidate Name" required="">
+											<div class="invalid-feedback">
+											  Please enter a Candidate Name.
+											</div>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="form-group">
+												<input type="text" class="form-control w-100" name="subject" placeholder="Subject" required="">
+											<div class="invalid-feedback">
+											  Please enter a Subject.
+											</div>
+											</div>
+										</div>
+									</div>	
+                                    <div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="email" class="form-control w-100" name="email" placeholder="Email" required="">
+											<div class="invalid-feedback">
+											  Please enter a Email.
+											</div>
+											</div>
+										</div>
+                                        <div class="col-lg-6">
+											<div class="form-group">
+												<input type="tel" class="form-control w-100" name="phone" placeholder="Phone Number" required="">
+											<div class="invalid-feedback">
+											  Please fill contact number.
+											</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+											<input type="date" class="form-control w-100" id="time" name="Select Date" required="">
+											<div class="invalid-feedback">
+											  Please select date.
+											</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+											<input type="date" class="form-control w-100" id="time" name="Select Date" required="">
+											<div class="invalid-feedback">
+											  Please select date.
+											</div>
+											</div>
+										</div>
+									</div>
+                                    <div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+                                                <select class="custom-select form-control" id="custom-time"></select>
+												<div class="invalid-feedback">Please select status</div>
+											  </div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<select class="custom-select form-control" required="">
+												  <option value="1" selected="" disabled>Panel Members</option>
+												  <option value="2">One Member</option>
+												  <option value="3">Two Member</option>
+												  <option value="4">Three Member</option>
+												</select>
+												<div class="invalid-feedback">Please select status</div>
+											  </div>
+										</div> 
+									</div>
+									</div>
+									<div class="button-box">
+										<div class="login-toggle-btn d-flex mb-2 justify-content-end">
+											<div class="button-box w-25">
+											<button class="login-btn btn mb-2 mt-0" type="submit"><span>Register</span></button>
+										</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					</div>
+			  <!--end of row-->
+			</div>
+			<!--end of container-->
+		  </section>
+
+		<footer class="footer-main">
+		  <div class="container">
+			  <div class="row">
+				<div class="col-12 col-md-12 divider"></div>
+				<!--end of col-->
+			   <div class="col-sm-6 col-lg-2">
+				<div class="wiedget-title">Pages</div>
+					<ul class="menu-link"> 
+						<li><a href="#">Features</a></li> 
+						<li><a href="#">Customers</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">GDPR</a></li>
+					</ul>
+			   </div>
+			   <div class="col-sm-6 col-lg-2">
+					<div class="wiedget-title">Company</div>
+					<ul class="menu-link"> 
+						<li><a href="#">About</a></li> 
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Leadership</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">HIRING!</a></li>
+					</ul>
+			   </div>
+			   <div class="col-md-6 col-lg-4">
+					<div class="wiedget-title">Contact</div>
+					<ul class="menu-link">
+                        <li><a href="#" class="">Contact Us</a></li>
+                        <li><a href="#" class="">Office Location</a></li>
+                        <li><a href="#" class="">admin@gmail.com</a></li>
+                        <li><a href="#" class="">support@admin.com</a></li>
+                        <li><a href="#" class="">+923333333</a></li>
+                    </ul>
+			   </div>
+			 <div class="col-md-6 col-lg-4">
+                <div class="wiedget-title">Subscribe</div>
+                <p>Get some offers, news, or update features of application</p>
+                <form method="POST">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your email..">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary"><span class="mai-send"></span></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Social Media Button -->
+                <div class="mt-4">
+                    <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-facebook"></span></a>
+                    <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-twitter"></span></a>
+                    <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-instagram"></span></a>
+                    <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-google"></span></a>
+                </div>
+            </div>
+			  </div>
+			  </div>
+			  <div id="copyrights"> 
+				  <div class="container">  
+					  <div class="row">
+						  <div class="col-12 col-md-6"> <p><span>KgeTech.</span> Copyright © 2022. All Rights Reserved</p></div>
+						  <div class="col-12 col-md-6 col_last tright"> 
+							  <div class="copyright-links">
+							     <ul class="nav justify-content-lg-end justify-content-center">
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Terms of Use</a></li>
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Privacy Policy</a></li>
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Cookie Policy</a></li>
+                                </ul>
+							  </div>
+						  </div>
+					  </div>
+				</div>
+			  </div>
+		  </footer>
+	 <!-- jQuery JS -->	  
+	<script src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	  <!-- Bootstrap JS -->
+	<script src="../../../assets/js/bootstrap.min.js"></script>
+	<script src="../../../assets/js/timezones.full.js"></script>
+	 <!-- owl carousel JS -->
+	<script src="../../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
+	
+    <script src="../../../assets/js/custom.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+
+	<script src="../../../assets/js/wow.min.js"></script>
+
+</body>
+</html>

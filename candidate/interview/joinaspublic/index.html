@@ -13,28 +13,27 @@
 
 	 <title>Interview - Brainmeasures </title>
 
-	<link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
 	
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../assets/css/bootstrap.css">
 
-	<link rel="stylesheet" href="../../assets/css/mobster.css">
+	<link rel="stylesheet" href="../../../assets/css/mobster.css">
   
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+
 	 <!-- owlcarousel css -->
-	<link rel="stylesheet" href="../../assets/plugins/owlcarousel/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../../assets/plugins/owlcarousel/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../../assets/plugins/owlcarousel/css/owl.theme.default.min.css">
 	
-	<link rel="stylesheet" href="../../assets/css/maicons.css">
+	<link rel="stylesheet" href="../../../assets/css/maicons.css">
 	
-	<link rel="stylesheet" href="../../assets/css/animate.css">
+	<link rel="stylesheet" href="../../../assets/css/animate.css">
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
     <!-- Responsive css -->
-    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
 	
 	<script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
 </head>
@@ -77,39 +76,10 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Dashboard
-                        </a>
+                        <a class="nav-link" href="#">My Profile</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="CompanyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Company
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" data-bs-popper="none">
-                            <li><a class="dropdown-item" href="/Admin/Company/Details">View All</a></li>
-                            <li><a class="dropdown-item" href="/Admin/Company/Create">Create</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="UserDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Manage Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="/Admin/ManageUsers/AdminUsers">Manage Admins</a></li>
-                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CompanyUsers">Company Users</a></li>
-                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CandidateUsers">Candidate Users</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="InterviewDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Manage Interview
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="/Admin/Interview/AdminUsers">All Interviews</a></li>
-                            <li><a class="dropdown-item" href="/Admin/Interview/CompanyUsers">Create Interview</a></li>
-                            <li><a class="dropdown-item" href="/Admin/Interview/CandidateUsers">Manage Interview</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Interview</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -149,49 +119,29 @@
 <section class="login-main">
     <div class="container">
         <div class="row center">
-            <div class="col-md-12 col-lg-6 offset-lg-3">
+            <div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
                 <!-- login-register-tab-list end -->
                 <div class="login-form-container">
                     <div class="login-register-form" id="logindisplay">
-                        <h3>Email Template</h3>
-                        <p>Design and Manage All Email Templates that are used in This System</p>
+                        <h3>Join Meeting</h3>
 							<form class="needs-validation" novalidate>
 							<input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" /> 
-                               <div class="form-group d-flex">
-                                    <select class="custom-select form-control" required="">
-                                      <option value="" selected="">Unknown</option>
-                                        <option value="100">CandidateRegister</option>
-                                        <option value="101">CandidateChangePassword</option>
-                                        <option value="102">CandidateResetPassword</option>
-                                        <option value="200">EmployerRegister</option>
-                                        <option value="203">EmployerChangePassword</option>
-                                        <option value="202">EmployerResetPassword</option>
-                                        <option value="201">EmployeeInvite</option>
-                                        <option value="300">AdminRegister</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select status</div>
-                                    <div class="button-box">
-                                <div class="login-toggle-btn">
-                                    <div class="ml-2 button-box">
-                                        <button class="login-btn btn mb-0 mt-0 text-nowrap" type="submit"><span>Load Email</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                                  </div>
-                                
-                                <div class="form-group">
-                                    <input type="text" class="form-control w-100" name="subject" placeholder="Subject" required="">
-                                        <div class="invalid-feedback">
-                                          Please enter subject.
-                                        </div>
-                                    </div>
-								  <div class="form-group">
-                                    <div id="summernote"></div>
-                                </div>
+                               <div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="email" value="" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct email address
+									</div>
+								</div>
+								<div class="form-group">
+                                    <input class="form-control" data-val="true" data-val-required="The UniqueCode field is required." id="UniqueCode" name="Password" placeholder="Unique Code" type="text" required>
+									  <div class="invalid-feedback w-100">
+									  Please fill correct Unique Code
+									</div>
+								</div>
                             <div class="button-box">
                                 <div class="login-toggle-btn d-flex justify-content-end">
                                     <div class="button-box w-25">
-                                        <button class="login-btn btn mb-2 mt-0" type="submit"><span>Submit</span></button>
+                                        <button class="login-btn btn mb-2 mt-0" type="submit"><span>Login</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -225,17 +175,19 @@
     <!--end of container-->
 </section>
 <!--Banner Start-->
-<section class="testimonial-main heading py-5">
+<section class="testimonial-main heading pb-4">
     <div class="container">
         <div class="row px-5">
             <div class="col-12 col-md-12 text-center position-relative">
+                <br>
+                <br>
                 <h1 class="display-4"><span>What they </span>saying?</h1>
                 <p class="lead">Read reviews from real users and their experience with Us</p>
             </div>
             <div class="row testimonial-in">
                 <div class="col-12 col-md-4 position-relative">
                     <div class="test-image">
-                        <img src="../../assets/img/public/testimonial.jpg" class="img-fluid" alt="Basic">
+                        <img src="../../../assets/img/public/testimonial.jpg" class="img-fluid" alt="Basic">
                         <i class="fa fa-quote-right" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -323,6 +275,11 @@
     </div>
 </section>
 
+
+
+
+
+    
 <footer class="footer-main">
     <div class="container">
         <div class="row">
@@ -359,7 +316,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 position-relative">
-                        <img class="img-fluid" src="../../assets/img/public/start.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/start.png" alt="">
                     </div>
                 </div>
             </div>
@@ -378,21 +335,21 @@
             <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
                 <div class="statsRhs">
                     <div class="statsListItem">
-                        <img class="img-fluid" src="../../assets/img/public/attempted-question.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/attempted-question.png" alt="">
                         <div>
                             <div class="value">976,055,412</div>
                             <div class="label">Questions Practiced</div>
                         </div>
                     </div>
                     <div class="statsListItem">
-                        <img class="img-fluid" src="../../assets/img/public/doubts-answered.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/doubts-answered.png" alt="">
                         <div>
                             <div class="value">11,898,432</div>
                             <div class="label">Tests Taken</div>
                         </div>
                     </div>
                     <div class="statsListItem">
-                        <img class="img-fluid" src="../../assets/img/public/doubts-done.png" alt="">
+                        <img class="img-fluid" src="../../../assets/img/public/doubts-done.png" alt="">
                         <div>
                             <div class="value">29,773,051</div>
                             <div class="label">Doubts Answered</div>
@@ -502,20 +459,17 @@
 </footer>
 
 	 <!-- jQuery JS -->	  
-	<script src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../assets/js/jquery-3.6.0.min.js"></script>
 	  <!-- Bootstrap JS -->
-	<script src="../../assets/js/bootstrap.min.js"></script>
-    
-    <script src="../../assets/js/summernote-lite.min.js"></script>
+	<script src="../../../assets/js/bootstrap.min.js"></script>
 	 <!-- owl carousel JS -->
-	<script src="../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
+	<script src="../../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
 	
-
 	
-    <script src="../../assets/js/custom.js"></script>
+    <script src="../../../assets/js/custom.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 
-	<script src="../../assets/js/wow.min.js"></script>
+	<script src="../../../assets/js/wow.min.js"></script>
 
 </body>
 </html>
