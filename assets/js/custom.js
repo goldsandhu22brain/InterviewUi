@@ -131,7 +131,7 @@ function myFunction() {
   $('#summernote').summernote({
         placeholder: 'Mail Body',
         tabsize: 2,
-        height: 120,
+        height: 420,
         toolbar: [
           ['style', ['style']],
           ['font', ['bold', 'underline', 'clear']],
@@ -151,3 +151,13 @@ function myFunction() {
      
         });
 
+
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY h:mm A'
+        }
+    });
+});

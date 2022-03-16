@@ -3725,7 +3725,7 @@ background-color: #F5F7F9;
 }
 .login-input-box input, 
 .login-input-box select {
-    color: #000;
+    color: #6c757d;
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     border-radius: 2px;
@@ -4322,4 +4322,11 @@ background-color: #1f01e5;
 }
 .note-editor.note-frame .dropdown-toggle::after {
     display: none;
+}
+
+.login-input-box .bootstrap-select .btn.dropdown-toggle {
+    border: 1px solid #e1e1e1 !important;
+    border-radius: 2px;
+    color: #6c757d;
+    font-size: 14px;
 }
