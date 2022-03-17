@@ -4330,3 +4330,6 @@ background-color: #1f01e5;
     color: #6c757d;
     font-size: 14px;
 }
+.form-group {
+    margin-bottom: 1rem;
+}

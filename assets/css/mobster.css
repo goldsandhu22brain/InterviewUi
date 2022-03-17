@@ -1372,11 +1372,6 @@ hr {
   border-radius: 4px;
 }
 
-/* Buttons */
-.btn {
-  padding: 10px 24px;
-  border-width: 2px;
-}
 
 .btn-primary {
   color: #ffffff;
@@ -2066,13 +2061,6 @@ hr {
 
 .breadcrumb-dark .breadcrumb-item.active {
   color: #fff;
-}
-
-/* Input */
-.form-control {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: unset;
 }
 
 /* Navbar */
