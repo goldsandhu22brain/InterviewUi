@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
 $('.users').owlCarousel({
     loop:false,
@@ -35,14 +38,14 @@ $('.users').owlCarousel({
         });
 
 
-
-$(document).ready(function(){
-    $(".code-panel").hide();
-    $("#btn-send-test").on("click",function(){
-        $(".code-panel").show();
-        //$("#accordionExample").hide();
-    });
-});
+//to be removed as this follows custom logic which we already have
+//$(document).ready(function(){
+//    $(".code-panel").hide();
+//    $("#btn-send-test").on("click",function(){
+//        $(".code-panel").show();
+//        //$("#accordionExample").hide();
+//    });
+//});
 
 
 
@@ -129,19 +132,21 @@ showTab(currentTab);
 });
 
 function showTab(n) {
-var x = document.getElementsByClassName("tab");
-x[n].style.display = "block";
-if (n == 0) {
-document.getElementById("prevBtn").style.display = "none";
-} else {
-document.getElementById("prevBtn").style.display = "inline";
-}
-if (n == (x.length - 1)) {
-document.getElementById("nextBtn").innerHTML = "Submit";
-} else {
-document.getElementById("nextBtn").innerHTML = "Next";
-}
-fixStepIndicator(n)
+    var x = document.getElementsByClassName("tab");
+    if (x != null && x[n] != null) {
+        x[n].style.display = "block";
+        if (n == 0) {
+            document.getElementById("prevBtn").style.display = "none";
+        } else {
+            document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)) {
+            document.getElementById("nextBtn").innerHTML = "Submit";
+        } else {
+            document.getElementById("nextBtn").innerHTML = "Next";
+        }
+        fixStepIndicator(n)
+    }
 }
 
 function nextPrev(n) {
