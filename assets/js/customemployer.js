@@ -39,13 +39,13 @@ $('.users').owlCarousel({
 
 
 //to be removed as this follows custom logic which we already have
-//$(document).ready(function(){
-//    $(".code-panel").hide();
-//    $("#btn-send-test").on("click",function(){
-//        $(".code-panel").show();
-//        //$("#accordionExample").hide();
-//    });
-//});
+$(document).ready(function(){
+   $(".code-panel").hide();
+   $("#btn-send-test").on("click",function(){
+      $(".code-panel").show();
+       //$("#accordionExample").hide();
+   });
+});
 
 
 
