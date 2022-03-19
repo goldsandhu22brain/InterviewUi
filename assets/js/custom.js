@@ -127,7 +127,8 @@ function myFunction() {
 }
 
  $(document).ready(function() {
- 
+var url = window.location.href;
+     if(url == 'file:///D:/git/interviewui/admin/email/index.html') {
   $('#summernote').summernote({
         placeholder: 'Mail Body',
         tabsize: 2,
@@ -140,19 +141,22 @@ function myFunction() {
           ['table', ['table']],
           ['insert', ['link', 'picture', 'video']],
           ['view', ['fullscreen', 'codeview', 'help']]
-        ]
+        ] 
       });
- 
+  }
    });
 
  $(document).ready(function() {
-     
+     var url = window.location.href;
+     if((url == 'file:///D:/git/interviewui/admin/interview/createinterview/index.html') || (url == 'file:///D:/git/interviewui/employer/interview/createinterview/index.html') ) {
   $("#custom-time").timezones();
-     
-        });
+ }
+ });
 
 
 $(function() {
+    var url = window.location.href;
+     if((url == 'file:///D:/git/interviewui/admin/interview/createinterview/index.html') || (url == 'file:///D:/git/interviewui/employer/interview/createinterview/index.html') ) {
     $('input[name="daterange"]').daterangepicker({
         timePicker: true,
         timePickerIncrement: 30,
@@ -160,4 +164,5 @@ $(function() {
             format: 'DD/MM/YYYY h:mm A'
         }
     });
+     }
 });

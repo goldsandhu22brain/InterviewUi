@@ -78,6 +78,9 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Dashboard</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="CompanyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Company
@@ -127,125 +130,135 @@
 			  </div>
 			</nav>
 	 </header>    
-                    
-     
-   <!--Banner Start-->
-		<section class="admin-main">
-			<div class="container">
-				<div class="row">
-				
-			   </div>
-			  <!--end of row-->
-			</div>
-			<!--end of container-->
-		  </section>
-		  
-		  <section class="heading py-5 tablecompany-sec">
-			<div class="container">
-				<div class="row px-5">
-                    <div class="col-12 col-md-12 text-center position-relative">
-					  <h1 class="display-4"><span>View</span> My Interview <span>Detail</span></h1>
-						<p class="lead">Read reviews from real users and their experience with Us</p>
-					</div>
-			<div class="card mt-4">
+<section class="admin-main">
+   <div class="container">
+      <div class="row">
+      </div>
+      <!--end of row-->
+   </div>
+   <!--end of container-->
+</section>
+
+<section class="heading pb-4 tablecompany-sec bg-light">
+   <div class="container-fluid">
+      <div class="row pt-5 px-5">
+       <div class="card mt-2">
 				<div class="card-body">
-                    <div class="searchin my-4">
-                        <div class="row">
-                            <div class="col-md-3 offset-md-9">
-                             <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-                            </div>
-                        </div>
+                    <div class="row">
+                       <div class= "col-lg-4 text-center py-lg-3 py-1">
+                          <a href="/admin/manageUsers/Admin" class="btn btn-primary">Admin Users</a>
+                       </div>
+                       <div class="col-lg-4 text-center py-lg-3 py-1">
+                          <a href="/admin/manageUsers/Employer" class="btn btn-warning text-white">Employer Users</a>
+                       </div>
+                       <div class="col-lg-4 text-center py-lg-3 py-1">
+                          <a href="/admin/manageUsers/Candidate" class="btn btn-info text-white">Candidates Users</a>
+                       </div>
                     </div>
                     
                     <div class="row tablehead">
                     <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Company Name</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Interviews</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Interview From Date Time UTC</li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
+                      <ul class="list-inline mb-0 d-lg-flex justify-content-between align-items-center">
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Full Name</li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Email Address</li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1">Phone Number</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1">TimeZone	</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2"> Company Name </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1"> Skills </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1"> Social Logins </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1">Status </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1">Edit </li>
                         </ul>
                      </div>
                      </div>
                     <div id="myTable">
                     <div class="row">
                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">1</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
+                            <ul class="list-inline mb-0 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Approved</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
                             </ul>
                          </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">3</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
+                        <span class="col-lg-12">
+                            <ul class="list-inline mb-0 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Unknown	</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
+                            </ul>
+                         </span> 
+                        <span class="col-lg-12">
+                            <ul class="list-inline mb-0 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Approved</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
                             </ul>
                          </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">2</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
+                        <span class="col-lg-12">
+                            <ul class="list-inline mb-0 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">	IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Unknown	</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
                             </ul>
                          </span>
-                         <span class="col-lg-12">
+                        <span class="col-lg-12">
                             <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">4</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Approved</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
                             </ul>
                          </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">6</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
+                        <span class="col-lg-12">
+                            <ul class="list-inline mb-0 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Maheshwari &nbsp; M</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">mahi@kgetechnologies.com</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">7401473180</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">IST</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-break">Kge Technologies</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-break">DotNet, C#, Manual testing, UI	</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-break">google	</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Unknown	</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Update</span> </li>
                             </ul>
                          </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">4</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">Kge Technology</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">4</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-success text-break">	6/3/2022 6:30:00 AM</li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <div class="dataTables_paginate text-right" id="company-table_paginate">
-                             <a class="paginate_button previous disabled" aria-controls="company-table" data-dt-idx="0" tabindex="-1" id="company-table_previous">Previous</a>
-                             <span><a class="paginate_button current">1</a>
-                                 <a class="paginate_button">2</a></span>
-                             <a class="paginate_button next">Next</a>
-                         </div>
+                        
                     </div><!--Mytable row end-->
                     </div><!--Mytable end-->
 					</div><!--Cardbody end-->
-					</div><!--card end-->
-				</div><!--Row end-->
-			</div><!--Container end-->
-		</section>
+					</div>
+      </div>
+   </div>
+</section>
 <section class="testimonial-main heading py-5">
     <div class="container">
         <div class="row px-5">

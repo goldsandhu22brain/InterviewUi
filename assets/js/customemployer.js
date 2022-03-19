@@ -43,7 +43,6 @@ $(document).ready(function(){
    $(".code-panel").hide();
    $("#btn-send-test").on("click",function(){
       $(".code-panel").show();
-       //$("#accordionExample").hide();
    });
 });
 
