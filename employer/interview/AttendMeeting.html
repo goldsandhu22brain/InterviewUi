@@ -60,15 +60,19 @@
                     </ul>
                 </div>
                 <div class="user-bottom row">
-                    <div id="conversation-panel"></div>
-                    <div class="form-group">
+                    <div id="conversation-panel">
+                        <div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gc5v2rfyessp" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> hello Test hello Test hello Test hello Test hello Test hello Test hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gf8x9fnv4hca" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9ghczlylh2th8" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test&nbsp;</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gbcohp134f4" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gcn63roqelvj" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> hello test</div>
+                         <div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gc5v2rfyessp" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gf8x9fnv4hca" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9ghczlylh2th8" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test&nbsp;</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gbcohp134f4" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> Hello Test</div><div class="message" style="background: rgb(203, 255, 203);"><b>You:</b> <img class="checkmark d-none" id="j0vbgvqqd9gcn63roqelvj" title="Received" src="https://www.webrtc-experiment.com/images/checkmark.png"> hello test</div>
+                    </div>
+                    <div class="form-group mb-2">
                         <textarea class="form-control" id="txt-chat-message" rows="1"></textarea>
                     </div>
                     <div class="col-md-5"><button class="btn btn-primary btn-sm mb-2 w-100" id="btn-chat-message">Send</button></div>
                     <div class="col-md-7"><button class="btn btn-primary btn-sm mb-2 w-100" id="btn-private-chat">Send To Employer</button></div>
                     <div class="col-md-7"><button class="btn btn-primary btn-sm mb-2 w-100" id="btn-send-codetest">Send Code Test</button></div>
                     <div class="col-md-5"><button class="btn btn-primary btn-sm mb-2 w-100" id="btn-send-test">Send Test</button></div>
-                    <div class="col-md-12"><button class="btn btn-danger btn-sm mb-2 w-100" id="btn-send-test">End Meeting</button></div>
+                    <div class="col-md-6"><button class="btn btn-danger btn-sm mb-2 w-100" id="btn-send-test"  data-bs-toggle="modal" data-bs-target="#testend">End Test</button></div>
+                    <div class="col-md-6"><button class="btn btn-danger btn-sm mb-2 w-100" id="btn-send-test">End Meeting</button></div>
                     <div class="col-md-12">
                     <div class="timer d-flex justify-content-center align-items-center">
                         <i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
@@ -130,14 +134,11 @@
                 <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
                    <div class="tab">
                         <ol class="list-group list-group-numbered">
-                          <li class="list-group-item px-0 py-1 border-0">Cras justo odio</li>
-                          <li class="list-group-item px-0 py-1 border-0">Cras justo odio</li>
-                          <li class="list-group-item px-0 py-1 border-0">Cras justo odio</li>
-                          <li class="list-group-item px-0 py-1 border-0">Cras justo odio</li>
+                          <li class="list-group-item px-0 py-1 border-0 d-flex align-items-center">Cras justo odio <input type="text" class="form-control ml-2 w-25" id="order" value="Please enter Order" placeholder="Please enter Order"></li>
+                          <li class="list-group-item px-0 py-1 border-0 d-flex align-items-center">Cras justo odio <input type="text" class="form-control ml-2 w-25" id="order" value="Please enter Order" placeholder="Please enter Order"></li>
+                          <li class="list-group-item px-0 py-1 border-0 d-flex align-items-center">Cras justo odio <input type="text" class="form-control ml-2 w-25" id="order" value="Please enter Order" placeholder="Please enter Order"></li>
+                          <li class="list-group-item px-0 py-1 border-0 d-flex align-items-center">Cras justo odio <input type="text" class="form-control ml-2 w-25" id="order" value="Please enter Order" placeholder="Please enter Order"></li>
                         </ol>
-                       <div class="my-2">
-                      <input type="text" class="form-control" id="order" value="Please enter Order" placeholder="Please enter Order">
-                    </div>
                 </div>     
                 <div class="tab">
                     <h4>Which board of education are you looking for?</h4> 
@@ -347,6 +348,53 @@
             </div>
         </div>
     </div>
+    <!-- Vertically centered modal -->
+<div class="modal fade" id="testend" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">    
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="staticBackdropLabel">Requirement of Test</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Title</span>
+              <input type="text" class="form-control" placeholder="Test" aria-label="test" aria-describedby="basic-addon1">
+            </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Allowed to go back
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Can Skip
+                  </label>
+                </div> 
+              <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                  <label class="form-check-label" for="flexCheckChecked1">
+                    Is review Allowed
+                  </label>
+                </div>
+              <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">TotalTimeInMinutes</span>
+              <input type="text" class="form-control" value="30" placeholder="Total Time" aria-label="totaltime" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon2">TotalTimeInMinutes</span>
+              <input type="text" class="form-control" value="30" placeholder="Total Time" aria-label="totaltime" aria-describedby="basic-addon2">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send Test</button>
+          </div>
+        </div>
+    </div>
+</div>
 	<!-- jQuery JS -->	  
 	<script src="../../assets/js/jquery-3.6.0.min.js"></script>
 	

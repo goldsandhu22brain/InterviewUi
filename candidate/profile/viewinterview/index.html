@@ -113,45 +113,136 @@
         </div>
     </nav>
 </header>
-
-    
-<!--Banner Start-->
-<section class="login-main">
+<section class="admin-main">
     <div class="container">
-        <div class="row center">
-            <div class="col-md-12 col-lg-6 offset-lg-3 mb-4">
-                <!-- login-register-tab-list end -->
-                <div class="login-form-container">
-                    <div class="login-register-form" id="logindisplay">
-                        <h3>Join Interview</h3>
-                        </div>
-                    </div>
-					<div class="login-register-form" id="forgethide">
-                        <h3>Forgot your password?</h3>
-                        <p>  <input id="Button2" class="inputbutton" type="button" placeholder="Click Here to Login as Candidate" value="Click Here to Login as Candidate" onclick="switchVisible();"/></p>
-							<form class="needs-validation" novalidate>
-							<input name="__RequestVerificationToken" type="hidden" value="8jIB2-_R8hl9K5cgq3xEU5ZQkChJNmmBST7ZJSsgy3ncUffJP7qprSa3w8uiOPX5putsGFriVikAMf0vWrHgeEL21AsstanOqMfnLjmogNs1" /> 
-                               <div class="form-group">
-                                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="email" value="" required>
-									  <div class="invalid-feedback w-100">
-									  Please fill correct email address
-									</div>
-								</div>
-                            <div class="button-box">
-                                <div class="login-toggle-btn d-flex justify-content-end mb-2">
-                                    <div class="button-box">
-                                        <button class="login-btn btn mb-2 mt-0" type="submit"><span>Reset Password</span></button>
-                                    </div>
-                                </div>
-                            </div>
-							</form>  
-                    </div>
-                </div>
-            </div>
-    <!--end of row-->
+        <div class="row">
+      </div>
+      <!--end of row-->
     </div>
     <!--end of container-->
-</section>
+  </section>
+<section class="heading py-5 tablecompany-sec">
+			<div class="container">
+				<div class="row px-5">
+                    <div class="col-12 col-md-12 text-center position-relative">
+					  <h1 class="display-4"><span>View</span> My Interview <span>Detail</span></h1>
+						<p class="lead">Read reviews from real users and their experience with Us</p>
+					</div>
+                    <div class="card mt-2">
+				<div class="card-body">
+                    <div class="searchin my-4">
+                        <div class="row">
+                            <div class="col-md-3 offset-md-9">
+                             <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row tablehead">
+                    <div class="col-lg-12">
+                      <ul class="list-inline d-lg-flex mb-1 justify-content-between align-items-center">
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1"><strong>Sr. No.</strong></li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Company Name</li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Interview On</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Interview From &amp; To (IST)</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1">Total Time</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2"> Interview Status	 </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1"> Status </li>
+                        </ul>
+                     </div>
+                     </div>
+                    <div id="myTable">
+                    <div class="row">
+                         <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>1</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                          <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>2</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                          <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>3</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                           <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>4</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                          <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>5</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                          <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>6</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                           <span class="col-lg-12">
+                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1"><strong>7</strong></li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">test</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">Vinay</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3">	<p>6/3/2022 6:30:00 AM</p> <p>6/3/2022 6:30:00 AM</p></li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1">60 Min</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">GoingToStart</li>
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-1 mb-1 text-white text-right"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Join</span> </li>
+                            </ul>
+                         </span>
+                         <div class="dataTables_paginate text-right" id="company-table_paginate">
+                             <a class="paginate_button previous disabled" aria-controls="company-table" data-dt-idx="0" tabindex="-1" id="company-table_previous">Previous</a>
+                             <span><a class="paginate_button current">1</a>
+                                 <a class="paginate_button">2</a></span>
+                             <a class="paginate_button next">Next</a>
+                         </div>
+                    </div><!--Mytable row end-->
+                    </div><!--Mytable end-->
+					</div><!--Cardbody end-->
+					</div>
+				</div>
+			</div>
+		</section>
 <!--Banner Start-->
 <section class="testimonial-main heading pb-4">
     <div class="container">

@@ -90,12 +90,12 @@ a {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+    padding: 10px;
     background: #27333a;
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #47748b;
 }
 
@@ -105,11 +105,11 @@ a {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 8px;
     font-size: 16px;
     display: block;
     background: #3b4347;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #fff;
 }
 
@@ -470,4 +470,21 @@ i.cancel {
 
 .form-group {
     margin-bottom: 1rem;
+}
+#conversation-panel .message {
+    background: #0d6efd !important;
+    padding: 0.4rem;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+#conversation-panel {
+    background: #333a3d;
+    height: 180px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 2;
+}
+#mCSB_1_scrollbar_vertical {
+    display: none !important;
 }
