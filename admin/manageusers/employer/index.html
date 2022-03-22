@@ -112,19 +112,30 @@
                         </ul>
                     </li>
                 </ul>
-                <span class="navbar-text">
+                    <span class="navbar-text">
                     <ul class="navbar-nav">
-                        <li class="list-inline-item nav-item ms-0">
-                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Employer/Profile">My Profile</a>
+                        <li class="list-inline-item nav-item ms-0 dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-primary cust-btn" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Signup
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/Candidate/Account/Register">Candidate Signup</a></li>
+                                <li><a class="dropdown-item" href="/Employer/Account/Register">Employer Signup</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-inline-item nav-item ms-0 dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-primary cust-btn" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sign In
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/Candidate/Account/Login">Candidate Sign In</a></li>
+                                <li><a class="dropdown-item" href="/Employer/Account/Login">Employer Sign In</a></li>
+                            </ul>
                         </li>
                     <li class="list-inline-item nav-item ms-0">
                         <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Request a demo</a>
                     </li>
-                        <li class="list-inline-item nav-item ms-0">
-                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Home/LogOff">LogOut</a>
-                        </li>
-
-                    </ul>
+                        </ul>
                 </span>
             </div>
 			  </div>
@@ -259,206 +270,9 @@
       </div>
    </div>
 </section>
-<section class="testimonial-main heading py-5">
-    <div class="container">
-        <div class="row px-5">
-            <div class="col-12 col-md-12 text-center position-relative">
-                <h1 class="display-4"><span>What they </span>saying?</h1>
-                <p class="lead">Read reviews from real users and their experience with Us</p>
-            </div>
-            <div class="row testimonial-in">
-                <div class="col-12 col-md-4 position-relative">
-                    <div class="test-image">
-                        <img src="../../../assets/img/public/testimonial.jpg" class="img-fluid" alt="Basic">
-                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="col-12 col-md-8 position-relative standard">
-                    <div class="review owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="testimonial-item">
-                                <div class="testimonial-box hover-from-left">
-                                    <div class="icon-content">
-                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
-                                    <div class="comment-header">
-                                        <ul class="rating-stars">
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-bio">
-                                        <span class="profile-info">
-                                            <strong class="profile-name">Alena Huffman</strong>
-                                            <p class="profile-des">Students</p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-item">
-                                <div class="testimonial-box hover-from-left">
-                                    <div class="icon-content">
-                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
-                                    <div class="comment-header">
-                                        <ul class="rating-stars">
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-bio">
-                                        <span class="profile-info">
-                                            <strong class="profile-name">Alena Huffman</strong>
-                                            <p class="profile-des">Students</p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-item">
-                                <div class="testimonial-box hover-from-left">
-                                    <div class="icon-content">
-                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
-                                    <div class="comment-header">
-                                        <ul class="rating-stars">
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                            <li><i aria-hidden="true" class="fa fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-bio">
-                                        <span class="profile-info">
-                                            <strong class="profile-name">Alena Huffman</strong>
-                                            <p class="profile-des">Students</p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <footer class="footer-main">
     <div class="container">
         <div class="row">
-            <div class="kidLhs-main">
-                <div class="row">
-                    <div class="col-12 col-md-6 position-relative">
-                        <div class="kidLhs">
-                            <h1 class="whiteHeader">Book a free online</h1>
-                            <h1 class="whiteHeader">counselling session</h1>
-                            <div class="description">
-                                Have any questions? An experienced Toppr Agent will be able to answer any questions you have and discuss
-                                academic goals as well as the unique needs of the learner.
-                            </div>
-                            <div class="buttonWrapper">
-                                <a href="/demo">
-                                    <div class="getSubscription">
-                                        <div class="getSubscriptionWrapper">
-                                            <span>book demo</span>
-                                            <span>
-                                                <svg height="10" viewBox="0 0 27 13" width="23" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="m113.23125 6.796875 4.025-3.9375-1.00625-.984375-5.75 5.625 5.75 5.625 1.00625-.984375-4.025-3.9375h23.14375v-1.40625z" fill="#fff" fill-rule="evenodd" transform="matrix(-1 0 0 1 136.875 -1)"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/learn/plus/">
-                                    <div class="chatWithUs">
-                                        subscribe now
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 position-relative">
-                        <img class="img-fluid" src="../../../assets/img/public/start.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
-                <div class="statsLhs">
-                    <h1 class="statsHeader">Students love using Brainmeasures</h1>
-                    <div class="studentCount">
-                        23,134,501
-                    </div>
-                    <div class="description">
-                        <span class="textGradient">Happy students</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
-                <div class="statsRhs">
-                    <div class="statsListItem">
-                        <img class="img-fluid" src="../../../assets/img/public/attempted-question.png" alt="">
-                        <div>
-                            <div class="value">976,055,412</div>
-                            <div class="label">Questions Practiced</div>
-                        </div>
-                    </div>
-                    <div class="statsListItem">
-                        <img class="img-fluid" src="../../../assets/img/public/doubts-answered.png" alt="">
-                        <div>
-                            <div class="value">11,898,432</div>
-                            <div class="label">Tests Taken</div>
-                        </div>
-                    </div>
-                    <div class="statsListItem">
-                        <img class="img-fluid" src="../../../assets/img/public/doubts-done.png" alt="">
-                        <div>
-                            <div class="value">29,773,051</div>
-                            <div class="label">Doubts Answered</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
-                <div class="featureItem">
-                    <div class="value classesGradient">
-                        <span class="quantity">5 - 12</span>
-                        <span class="unit">Classes</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
-                <div class="featureItem">
-                    <div class="value boardsGradient">
-                        <span class="quantity">22</span>
-                        <span class="unit">Boards</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
-                <div class="featureItem">
-                    <div class="value examsGradient">
-                        <span class="quantity">58</span>
-                        <span class="unit">Exams</span>
-                    </div>
-                </div>
-            </div>
             <div class="col-12 col-md-12 divider"></div>
             <!--end of col-->
             <div class="col-12 col-md-3">
@@ -506,7 +320,7 @@
                         </div>
                         <h5 class="nobottommargin">Total Courses</h5>
                     </div>
-                    <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+                    <p>Subscribe to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</p>
                     <h5 class="mb-3">Subscribe</h5>
                     <p>Get some offers, news, or update features of application</p>
                     <form method="POST">
