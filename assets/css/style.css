@@ -2034,7 +2034,7 @@ position: relative;
     position: relative;
 }
 .bottom-ser {
-    background: url(images/signup-bg.jpg);
+    background: url(../img/public/signup-bg.jpg);
     height: 330px;
     text-align: center;
     position: relative;
@@ -2244,7 +2244,7 @@ position: relative;
     padding-top: 10%;
 }
 .one-courses {
-    background-image: url(images/bg-slider-03.png);
+    background-image: url(../img/public/bg-slider-03.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #5062d9;
@@ -2328,7 +2328,7 @@ background-color: #A5C347; }
     border-radius: 15px;
 }
 .oneon-video {
-    background: url(images/oneto.png);
+    background: url(../img/public/oneto.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
