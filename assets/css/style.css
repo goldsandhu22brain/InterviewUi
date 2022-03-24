@@ -4333,3 +4333,21 @@ background-color: #1f01e5;
 .form-group {
     margin-bottom: 1rem;
 }
+.tooltipemail:hover .tooltip {
+    opacity: 1;
+    top: -2.5rem;
+    left: 0;
+    right: 0;
+}
+.tooltipemail {
+    position: relative; 
+    transition: all ease-in-out .3s;
+}
+.tooltipemail .tooltip .tooltip-arrow {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.notv-email .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .notv-email .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #dc3545;
+}
