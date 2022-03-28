@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="../../assets/css/animate.css">
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
-    <link rel="stylesheet" href="../../assets/css/dashboard-style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 	 <!-- Responsive css -->
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     
@@ -42,70 +42,111 @@
 
 </head>
 <body>
+<!--header start-->
+    <header class="fixed-top">
 
-    <div class="wrapper">
-        <!-- Sidebar Holder -->
-        <nav id="sidebar" class="p-2">
-                <div class="user-top">
-                    <div class="sidebar-header text-center">
-                        <img src="../../assets/img/employer/widget-img.png" class="img-fluid">
-                    </div>
-                     <ul class="list-unstyled components">
-                        <li class="active">
-                            <a class="btn-toggle" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Home</a>
-                            <ul class="list-unstyled collapse" id="collapseExample" style="">
-                                <li>
-                                    <a href="#">Home 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Home 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Home 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                        <a  class="btn-toggle" data-bs-toggle="collapse" href="#pageSubmenu" role="button" aria-expanded="false" aria-controls="collapseExample">Pages</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="#">Page 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Page 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Page 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
+	 <!--End header start-->
+		  <nav class="navbar py-2 navbar-expand-lg navbar-dark">
+			  <div class="container-fluid">
+				<div class="toggle-top">
+					<button class="btn navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
 
-        <!-- Page Content Holder -->
-        <div id="content" class="contentdashboard">
-		 <button type="button" id="sidebarCollapse" class="navbar-btn">
-					<i class="fa fa-angle-left" aria-hidden="true"></i>
-					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					  <div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brad" href="index.html">Brainmeasures.</a></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					  </div>
+					  <div class="offcanvas-body">
+						<div class="dropdown mt-3">
+						  <ul>
+							<li><a class="dropdown-item" href="#">Education</a></li>
+							<li><a class="dropdown-item" href="#">Community</a></li>
+							<li><a class="dropdown-item" href="#">Library</a></li>
+							<li><a class="dropdown-item" href="#">Product</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+			  
+			  
+				<a class="navbar-brand" href="index.html">Brainmeasures.</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
 				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+				  <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Solution
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+						<li><a class="dropdown-item" href="#">Founder</a></li>
+						<li><a class="dropdown-item" href="#">Idea</a></li>
+						<li><a class="dropdown-item" href="#">Formation</a></li>
+						<li><a class="dropdown-item" href="#">Planning</a></li>
+					  </ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Library</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Product</a>
+					</li>
+				  </ul>
+					 <span class="navbar-text">
+						<ul class="navbar-nav">
+					  <li class="list-inline-item nav-item ms-0 dropdown">
+						   <a class="nav-link dropdown-toggle btn btn-outline-primary cust-btn" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Signup
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+						<li><a class="dropdown-item" href="candidate/account/register/index.html">Candidate Signup</a></li>
+						<li><a class="dropdown-item" href="employer/account/register/index.html">Employer Signup</a></li>
+					  </ul>
+						</li>
+						<li class="list-inline-item nav-item ms-0 dropdown">
+						   <a class="nav-link dropdown-toggle btn btn-outline-primary cust-btn" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Sign In
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+						<li><a class="dropdown-item" href="candidate/account/login/index.html">Candidate Sign In</a></li>
+						<li><a class="dropdown-item" href="employer/account/login/index.html">Employer Sign In</a></li>
+					  </ul>
+						</li>
+						<li class="list-inline-item nav-item ms-0">
+						  <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Request a demo</a>
+						</li>
+					</ul>
+					  </span>
+				</div>
+			  </div>
+			</nav>
+	 </header>
+    <section class="admin-main">
+    <div class="container">
+        <div class="row">
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+        <!-- Page Content Holder -->
+    <div class="contentdashboard pt-5">
+    <div class="container">
+    <div class="row">
             <div class="content-header sty-one">
-      <h1>Dashboard</h1>
+      <h1 class="fw-bold">Dashboard</h1>
       <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li><i class="fa fa-angle-right"></i> Dashboard</li>
       </ol>
     </div>
-		<div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="info-box bg-darkblue"> <span class="info-box-icon bg-transparent"><img src="../../assets/img/public/s10.png" class="img-fluid" alt=""></span>
             <div class="info-box-content">
@@ -150,498 +191,241 @@
           <!-- /.info-box --> 
         </div>
         <!-- /.col --> 
-      </div>
-       
-    <div class="box card-box row">
-        <div class="col-lg-6 col-sm-6 col-xs-12">     
+        </div>
+    <div class="box card-box mb-4">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 col-xs-12">     
             <div class="icon-box bg-color-1">
                 <div class="icon bg-icon-1">
                 <i class="fa fa-bell" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                <h5 class="title-box fw-bold">Today's All Registered</h5>
+                <h5 class="title-box fw-bold">Today's </h5>
                 <p class="color-1 mb-0 pt-0">5 Unread notification</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">     
+        <div class="col-lg-4 col-sm-6 col-xs-12">     
             <div class="icon-box bg-color-2">
                 <div class="icon bg-icon-2">
                 <i class="fa fa-bell" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                <h5 class="title-box fw-bold">Today's Admin Registered</h5>
+                <h5 class="title-box fw-bold">Current Month</h5>
                 <p class="color-2 mb-0 pt-0">5 Unread notification</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">     
+        <div class="col-lg-4 col-sm-6 col-xs-12">     
             <div class="icon-box bg-color-3">
                 <div class="icon bg-icon-3">
                 <i class="fa fa-bell" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                <h5 class="title-box fw-bold">Today's Employer Registered</h5>
+                <h5 class="title-box fw-bold">Total Till Date</h5>
                 <p class="color-3 mb-0 pt-0">5 Unread notification</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">     
+         </div>
+    </div>
+        
+          <div class="box card-box mb-4">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-1">
+                <div class="icon bg-icon-1">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Pending Activation</h5>
+                <p class="color-1 mb-0 pt-0">5 Unread notification</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-2">
+                <div class="icon bg-icon-2">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Admin Activation</h5>
+                <p class="color-2 mb-0 pt-0">5 Unread notification</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-3">
+                <div class="icon bg-icon-3">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Employer Activation</h5>
+                <p class="color-3 mb-0 pt-0">5 Unread notification</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
             <div class="icon-box bg-color-4">
                 <div class="icon bg-icon-4">
                 <i class="fa fa-bell" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                <h5 class="title-box fw-bold">Today's Candidate Registered</h5>
+                <h5 class="title-box fw-bold">Cadidate Activation</h5>
                 <p class="color-4 mb-0 pt-0">5 Unread notification</p>
                 </div>
             </div>
         </div>
-    </div>
-            <div class="card-body bg-white m-4 rounded-3">
-            <div class="row">
-                <h3 class="fw-bold">Total Pending for activation</h3>
-                  <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        </div>
+          <div class="box card-box mb-4">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-1">
+                <div class="icon bg-icon-1">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Total Created</h5>
+                <p class="color-1 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-2">
+                <div class="icon bg-icon-2">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Created Today</h5>
+                <p class="color-2 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-                <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-3">
+                <div class="icon bg-icon-3">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Planned Today</h5>
+                <p class="color-3 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-4">
+                <div class="icon bg-icon-4">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Completed Today</h5>
+                <p class="color-4 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-         <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        </div>
+        </div>
+          <div class="box card-box mb-4">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-1">
+                <div class="icon bg-icon-1">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Total Interview created This Month</h5>
+                <p class="color-1 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-2">
+                <div class="icon bg-icon-2">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Total Interview Completed This Month</h5>
+                <p class="color-2 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-3">
+                <div class="icon bg-icon-3">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Total Interview Upcoming This Month</h5>
+                <p class="color-3 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-            </div>  
-                  <div class="card-body bg-white m-4 rounded-3">
-            <div class="row">
-                <h3 class="fw-bold">Interview Created Today's</h3>
-                 <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-4">
+                <div class="icon bg-icon-4">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Tll Date</h5>
+                <p class="color-4 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        </div>
+        </div>
+          <div class="box card-box mb-4">
+    <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-1">
+                <div class="icon bg-icon-1">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Total Interview created</h5>
+                <p class="color-1 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-              <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-success btn-sm py-0">Approved</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-2">
+                <div class="icon bg-icon-2">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Complete Till date</h5>
+                <p class="color-2 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-3">
+                <div class="icon bg-icon-3">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Panding Till Date </h5>
+                <p class="color-3 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-        <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">     
+            <div class="icon-box bg-color-4">
+                <div class="icon bg-icon-4">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                <h5 class="title-box fw-bold">Canceled detail</h5>
+                <p class="color-4 mb-0 pt-0">5 Unread notification</p>
+                </div>
             </div>
-            </div>
-            </div>
-            </div>
-            <div class="card-body bg-white m-4 rounded-3">
-            <div class="row">
-                <h3 class="fw-bold">Interview Created Till Date</h3>
-           <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
-            </div>
-            </div>
-             <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
-            </div>
-            </div>
-                <div class="col-lg-4">
-                 <div class="bg-light">
-                <div class="row tablehead">
-                    <div class="col-lg-12">
-                      <ul class="list-inline mb-1 d-lg-flex justify-content-between align-items-center">
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3">Email</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-4">Interview Time</li> 
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-3"> Status </li>
-                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2 text-center"> Edit </li>
-                        </ul>
-                     </div>
-                     </div>
-                    <div id="myTable">
-                    <div class="row">
-                        <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                          <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                         <span class="col-lg-12">
-                            <ul class="list-inline mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-primary text-break">kge@gmail.com</li> 
-                                <li class="list-inline-item border-0 m-0 p-2 col-lg-4">6/3/2022 6:30:00 AM</li> 
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-3 text-white"> <span class="btn status-btn btn-danger btn-sm py-0">Pending</span> </li>
-                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-success text-center"><a href=""><i class="fa fa-edit text-dark fs-5"></i></a></li>
-                            </ul>
-                         </span>
-                    </div><!--Mytable row end-->
-                </div><!--Mytable end-->
-            </div>
-            </div>
-            </div>
-            </div>
+        </div>
+        </div>
+        </div>  
+   
        
-            
         </div>
-    </div>
-    <!-- Vertically centered modal -->
-<div class="modal fade" id="testend" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">    
-    <div class="modal-dialog modal-dialog-centered">
-     <div class="modal-content">
-          <div class="modal-header bg-danger text-white">
-            <h5 class="modal-title" id="staticBackdropLabel">Requirement of Test</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">Title</span>
-              <input type="text" class="form-control" placeholder="Test" aria-label="test" aria-describedby="basic-addon1">
-            </div>
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Allowed to go back
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Can Skip
-                  </label>
-                </div> 
-              <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
-                  <label class="form-check-label" for="flexCheckChecked1">
-                    Is review Allowed
-                  </label>
-                </div>
-              <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">TotalTimeInMinutes</span>
-              <input type="text" class="form-control" value="30" placeholder="Total Time" aria-label="totaltime" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon2">TotalTimeInMinutes</span>
-              <input type="text" class="form-control" value="30" placeholder="Total Time" aria-label="totaltime" aria-describedby="basic-addon2">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send Test</button>
-          </div>
         </div>
-    </div>
-</div>
 	<!-- jQuery JS -->	  
 	<script src="../../assets/js/jquery-3.6.0.min.js"></script>
 	  <!-- Bootstrap JS -->
@@ -651,7 +435,7 @@
 	 <!-- owl carousel JS -->
 	<script src="../../assets/plugins/owlcarousel/js/owl.carousel.min.js"></script>
 	 
-    <script src="../../assets/js/customdashboard.js"></script>
+    <script src="../../assets/js/custom.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 
 	<script src="../../assets/js/wow.min.js"></script>
