@@ -4351,23 +4351,6 @@ background-color: #1f01e5;
 .notv-email .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .notv-email .bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #dc3545;
 }
-#conversation-panel .message {
-    background: #0d6efd !important;
-    padding: 0.4rem;
-    border-radius: 10px;
-    margin-bottom: 3px;
-    font-size: 14px;
-}
-#conversation-panel {
-    background: #333a3d;
-    height: 180px;
-    overflow-y: scroll;
-    position: relative;
-    z-index: 2;
-}
-#mCSB_1_scrollbar_vertical {
-    display: none !important;
-}
 
 .bg-darkblue {
     background: linear-gradient( 45deg, #ff7900, #ffe007);
