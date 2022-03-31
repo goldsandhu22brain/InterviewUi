@@ -124,6 +124,9 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+#thediv .del-btn {
+    position: relative;
+}
 .main-banner {
     height: 560px;
 }

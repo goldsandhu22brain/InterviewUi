@@ -3995,7 +3995,7 @@ background-color: #F5F7F9;
     border-radius: 2px;
     box-shadow: none;
     border: 1px solid #E1E1E1;
-    padding: .375rem .75rem;
+    padding: .2rem .75rem;
 }
 .login-input-box .bootstrap-tagsinput input {
     border: 0px;
@@ -4800,7 +4800,7 @@ h1.temaa {
 .delfirst + #thediv button.del-btn {
     display: none;
 }
-#main-ques #thediv .del-btn {
+#thediv .del-btn {
     position: absolute;
     right: 0;
     top: 0;
