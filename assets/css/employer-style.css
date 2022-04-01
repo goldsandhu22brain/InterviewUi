@@ -472,11 +472,12 @@ i.cancel {
     margin-bottom: 1rem;
 }
 #conversation-panel .message {
-    background: #0d6efd !important;
+    background: #f1f1f1 !important;
     padding: 0.4rem;
     border-radius: 10px;
     margin-bottom: 3px;
     font-size: 14px;
+    color: #000000;
 }
 #conversation-panel {
     background: #333a3d;
