@@ -4806,3 +4806,6 @@ h1.temaa {
     top: 0;
 }
 #main-ques #thediv{ position: relative;}
+.show-tick .dropdown-menu.show {
+    height: 250px;
+}
