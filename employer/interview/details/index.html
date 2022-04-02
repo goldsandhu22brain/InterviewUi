@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+	<meta name="description" content="Mobile Application HTML5 Template">
+
+	<meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+
+	 <title>Interview - Brainmeasures </title>
+
+	<link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
+	
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+	 <!-- owlcarousel css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <!-- Main Style CSS (Please use minify version for better website load performance) -->
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    
+	<script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
+
+</head>
+<body>
+<!--header start-->
+    <header class="fixed-top">
+
+	 <!--End header start-->
+		  <nav class="navbar py-2 navbar-expand-lg navbar-dark">
+			  <div class="container-fluid">
+				<div class="toggle-top">
+					<button class="btn navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					  <div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brad" href="index.html">Brainmeasures.</a></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					  </div>
+					  <div class="offcanvas-body">
+						<div class="dropdown mt-3">
+						  <ul>
+							<li><a class="dropdown-item" href="#">Education</a></li>
+							<li><a class="dropdown-item" href="#">Community</a></li>
+							<li><a class="dropdown-item" href="#">Library</a></li>
+							<li><a class="dropdown-item" href="#">Product</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+			  
+			  
+				<a class="navbar-brand" href="index.html">Brainmeasures.</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="CompanyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/Company/Details">View All</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Company/Create">Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="UserDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage Users
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/AdminUsers">Manage Admins</a></li>
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CompanyUsers">Company Users</a></li>
+                            <li><a class="dropdown-item" href="/Admin/ManageUsers/CandidateUsers">Candidate Users</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="InterviewDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage Interview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="/Admin/Interview/AdminUsers">All Interviews</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Interview/CompanyUsers">Create Interview</a></li>
+                            <li><a class="dropdown-item" href="/Admin/Interview/CandidateUsers">Manage Interview</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav">
+                        <li class="list-inline-item nav-item ms-0">
+                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Employer/Profile">My Profile</a>
+                        </li>
+                    <li class="list-inline-item nav-item ms-0">
+                        <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Request a demo</a>
+                    </li>
+                        <li class="list-inline-item nav-item ms-0">
+                            <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="/Home/LogOff">LogOut</a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+			  </div>
+			</nav>
+	 </header>
+
+<div class="light py-5">
+    <div class="container">
+        <div class="row py-5 mt-5">
+            <div class="col-lg-12 contentColumn">
+                <div class="bodyContent">
+                    <div class="pageCointainer">
+                        <section class="comonSection aboutSection heading">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <h1 class="display-4"><span class="text-primary">Interview Details</span></h1>
+                                </div>
+                           <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                                <h3>Candidate Name</h3>
+                                                <p>asdasd</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-building-o" aria-hidden="true"></i>
+                                                <h3>Candidate Status</h3>
+                                                <p>Pending</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                <h3>Candidate Email Address</h3>
+                                                <p>kgetechnologies@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <h3>Candidate Phone Number</h3>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                <h3>Candidate Account Created</h3>
+                                                    <p>Candidate has Not Yet Registered with System</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                <h3>Interview Date Time (UTC)</h3>
+                                                <p>4/2/2022 6:30:00 PM</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="icon_box_01">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                <h3>Duration(In Minutes)</h3>
+                                                <p>8580</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="heading py-5 tablecompany-sec">
+			<div class="container">
+				<div class="row px-5">
+                    <div class="col-12 col-md-12 text-center position-relative">
+					 <h1 class="display-4">Skill <span>Test Details</span></h1>
+					</div>
+			<div class="card mt-4">
+				<div class="card-body">
+                    <div class="row tablehead">
+                    <div class="col-lg-12">
+                      <ul class="list-inline row mb-1 d-lg-flex justify-content-between align-items-center">
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">Type</li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2">No Of Questions</li> 
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-5">Topics Covered</li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-2"> Panel Required </li>
+                            <li class="list-inline-item bg-dark text-white border-0 mx-0 my-1 p-2 col-lg-1 text-center"> Status </li>
+                        </ul>
+                     </div>
+                     </div>
+                    <div id="myTable">
+                    <div class="row">
+                        <span class="col-lg-12">
+                            <ul class="list-inline row mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">UnKnown</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">5</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-5 text-success text-break">Lean Six Sigma Manufacturing Certification Practice Test Materials and Construction test</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-success btn-sm py-0">Yes</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-center">0</li>
+                            </ul>
+                         </span>
+                        <span class="col-lg-12">
+                            <ul class="list-inline row mb-1 border-bottom d-lg-flex justify-content-between align-items-center">
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2">UnKnown</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-primary text-break">5</li> 
+                                <li class="list-inline-item border-0 m-0 p-2 col-lg-5 text-success text-break">Lean Six Sigma Manufacturing Certification Practice Test Materials and Construction test</li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-2 text-white"> <span class="btn status-btn w-75 btn-danger btn-sm py-0">Yes</span> </li>
+                                 <li class="list-inline-item border-0 m-0 p-2 col-lg-1 text-success text-center">0</li>
+                            </ul>
+                         </span>
+                    </div><!--Mytable row end-->
+                    </div><!--Mytable end-->
+					</div><!--Cardbody end-->
+					</div><!--card end-->
+				</div><!--Row end-->
+			</div><!--Container end-->
+		</section>
+    <section class="heading py-5 tablecompany-sec">
+			<div class="container">
+				<div class="row px-5">
+					<div class="col-12 col-md-12 text-center position-relative">
+						<h1 class="display-4">OverAll FeedBack <span>By HR Team</span></h1>
+					</div>
+					<div class="card mt-4">
+						<div class="card-body">
+							<div id="myTable">
+								<div class="row">
+                                    <span class="col-lg-12 mb-2">
+                                        <ul class="list-group p-5">
+                                        <form class="ViewInterviewHrFeedBackForm">
+                                            <div class="form-group">
+                                                 <textarea rows="5" class="ViewInterviewHrFeedBackFormInput form-control" id="OverallFeedBackData" placeholder="Please enter feedback"></textarea>
+                                            </div>
+                                           <div class="form-group">
+                                                <select class="custom-select select-control form-control" data-val="true" data-val-required="The OverAllFeedBackStatus field is required." id="OverallFeedBackStatus" name="Details.OverAllFeedBackStatus"><option selected="selected" value="0">Pending</option>
+                                                <option value="25">Selected</option>
+                                                <option value="50">OnHold</option>
+                                                <option value="75">Rejected</option>
+                                                </select>
+                                            </div>
+                                              <button class="btn btn-success float-end" type="submit" data-interview-id="1ed8d60a-517a-4edb-86b2-51fb73955c34" onclick="submitOverallFeedback(this)">Submit HR FeedBack</button>
+                                        </form>
+                                        </ul>
+                                    </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <section class="heading py-5 tablecompany-sec">
+		<div class="container-fluid">
+			<div class="row px-5">
+				<div class="col-12 col-md-12 text-center position-relative">
+					<h1 class="display-4">Assigned <span>Panel </span>Members</h1>
+				</div>
+				<div class="card mt-3">
+					<div class="card-body">
+						<div id="myTable">
+							<div class="row">
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Maheshwari M</strong>(mahi@kgetechnologies.com)</li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>FeedBack Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-success">
+												<span>Panel Member Skills</span>
+											</li>
+												<li class="list-group-item border-0 px-1 py-0 mb-1 text-white">
+														<span class="bg-secondary rounded px-2">DotNet</span>
+														<span class="bg-secondary rounded px-2">C#</span>
+														<span class="bg-secondary rounded px-2">Manual testing</span>
+														<span class="bg-secondary rounded px-2">UI</span>
+												</li>
+										</ul>
+									</span>
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Maheshwari FeedBack</strong></li>
+												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
+
+										</ul>
+									</span>
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Vikash Raaj</strong>(vikash@kgetechnologies.com)</li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>FeedBack Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-success">
+												<span>Panel Member Skills</span>
+											</li>
+										</ul>
+									</span>
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Vikash FeedBack</strong></li>
+												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
+
+										</ul>
+									</span>
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Test User1</strong>(testuser1@kgetechnologies.com)</li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>FeedBack Status: </span><strong>Pending</strong></li>
+											<li class="list-group-item border-0 px-1 py-0 text-success">
+												<span>Panel Member Skills</span>
+											</li>
+												<li class="list-group-item border-0 px-1 py-0 mb-1 text-white">
+														<span class="bg-secondary rounded px-2">Html</span>
+												</li>
+										</ul>
+									</span>
+									<span class="col-lg-6 mb-6">
+										<ul class="list-group p-2 border">
+											<li class="list-group-item border-0 px-1 py-0"><strong>Test FeedBack</strong></li>
+												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
+
+										</ul>
+									</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<footer class="footer-main">
+		  <div class="container">
+			  <div class="row">
+				<div class="col-12 col-md-12 divider"></div>
+				<!--end of col-->
+			   <div class="col-sm-6 col-lg-2">
+				<div class="wiedget-title">Pages</div>
+					<ul class="menu-link"> 
+						<li><a href="#">Features</a></li> 
+						<li><a href="#">Customers</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">GDPR</a></li>
+					</ul>
+			   </div>
+			   <div class="col-sm-6 col-lg-2">
+					<div class="wiedget-title">Company</div>
+					<ul class="menu-link"> 
+						<li><a href="#">About</a></li> 
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Leadership</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">HIRING!</a></li>
+					</ul>
+			   </div>
+			   <div class="col-md-6 col-lg-4">
+					<div class="wiedget-title">Contact</div>
+					<ul class="menu-link">
+                        <li><a href="#" class="">Contact Us</a></li>
+                        <li><a href="#" class="">Office Location</a></li>
+                        <li><a href="#" class="">admin@gmail.com</a></li>
+                        <li><a href="#" class="">support@admin.com</a></li>
+                        <li><a href="#" class="">+923333333</a></li>
+                    </ul>
+			   </div>
+			 <div class="col-md-6 col-lg-4">
+                <div class="wiedget-title">Subscribe</div>
+                <p>Get some offers, news, or update features of application</p>
+                <form method="POST">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your email..">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Social Media Button -->
+                <div class="mt-4">
+                   <a href="#" class="btn btn-fab1 btn-primary fg-white"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-fab1 btn-primary fg-white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-fab1 btn-primary fg-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-fab1 btn-primary fg-white"><i class="fa fa-google" aria-hidden="true"></i></a>
+                </div>
+            </div>
+			  </div>
+			  </div>
+			  <div id="copyrights"> 
+				  <div class="container">  
+					  <div class="row">
+						  <div class="col-12 col-md-6"> <p><span>KgeTech.</span> Copyright © 2022. All Rights Reserved</p></div>
+						  <div class="col-12 col-md-6 col_last tright"> 
+							  <div class="copyright-links">
+							     <ul class="nav justify-content-lg-end justify-content-center">
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Terms of Use</a></li>
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Privacy Policy</a></li>
+                                    <li class="nav-item my-0 mx-2"><a href="#" class="nav-link p-0 border-0">Cookie Policy</a></li>
+                                </ul>
+							  </div>
+						  </div>
+					  </div>
+				</div>
+			  </div>
+		  </footer>
+		 <!-- jQuery JS -->	  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+	 <!-- owl carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script src="../../../assets/js/custom.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</body>
+</html>

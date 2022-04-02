@@ -127,6 +127,9 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
 #thediv .del-btn {
     position: relative;
 }
+    .tablehead li {
+    width: 100%;
+}
 .main-banner {
     height: 560px;
 }
