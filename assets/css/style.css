@@ -4809,3 +4809,14 @@ h1.temaa {
 .show-tick .dropdown-menu.show {
     height: 250px;
 }
+.dropdown.bootstrap-select .inner .inner {
+    min-width: 100% !important;
+}
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    white-space: initial;
+}
+#main-ques span.titlebox {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+}
