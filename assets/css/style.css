@@ -4820,3 +4820,15 @@ h1.temaa {
     font-weight: bold;
     letter-spacing: 0.1px;
 }
+.meeticon ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.bg-blue {    
+    background-color: #1f01e5;
+}
+.meeticon img.img-fluid {
+    width: 40%;
+}

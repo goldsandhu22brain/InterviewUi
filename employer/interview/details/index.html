@@ -284,7 +284,7 @@
 					<div class="card-body">
 						<div id="myTable">
 							<div class="row">
-									<span class="col-lg-6 mb-6">
+									<span class="col-lg-6 mb-3">
 										<ul class="list-group p-2 border">
 											<li class="list-group-item border-0 px-1 py-0"><strong>Maheshwari M</strong>(mahi@kgetechnologies.com)</li>
 											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
@@ -300,14 +300,24 @@
 												</li>
 										</ul>
 									</span>
-									<span class="col-lg-6 mb-6">
-										<ul class="list-group p-2 border">
-											<li class="list-group-item border-0 px-1 py-0"><strong>Maheshwari FeedBack</strong></li>
-												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
-
-										</ul>
+									<span class="col-lg-6 mb-3">
+										<div class="list-group p-2 border">
+											<form class="ViewInterviewHrFeedBackForm">
+                                            <div class="form-group">
+                                                 <textarea rows="3" class="ViewInterviewHrFeedBackFormInput form-control" id="OverallFeedBackData" placeholder="Please enter feedback"></textarea>
+                                            </div>
+                                           <div class="form-group">
+                                                <select class="custom-select select-control form-control" data-val="true" data-val-required="The OverAllFeedBackStatus field is required." id="OverallFeedBackStatus" name="Details.OverAllFeedBackStatus"><option selected="selected" value="0">Pending</option>
+                                                <option value="25">Selected</option>
+                                                <option value="50">OnHold</option>
+                                                <option value="75">Rejected</option>
+                                                </select>
+                                            </div>
+                                              <button class="btn btn-success float-end" type="submit" data-interview-id="1ed8d60a-517a-4edb-86b2-51fb73955c34" onclick="submitOverallFeedback(this)">Submit HR FeedBack</button>
+                                        </form>
+										</div>
 									</span>
-									<span class="col-lg-6 mb-6">
+									<span class="col-lg-6 mb-3">
 										<ul class="list-group p-2 border">
 											<li class="list-group-item border-0 px-1 py-0"><strong>Vikash Raaj</strong>(vikash@kgetechnologies.com)</li>
 											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
@@ -317,14 +327,14 @@
 											</li>
 										</ul>
 									</span>
-									<span class="col-lg-6 mb-6">
+									<span class="col-lg-6 mb-3">
 										<ul class="list-group p-2 border">
 											<li class="list-group-item border-0 px-1 py-0"><strong>Vikash FeedBack</strong></li>
 												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
 
 										</ul>
 									</span>
-									<span class="col-lg-6 mb-6">
+									<span class="col-lg-6 mb-3">
 										<ul class="list-group p-2 border">
 											<li class="list-group-item border-0 px-1 py-0"><strong>Test User1</strong>(testuser1@kgetechnologies.com)</li>
 											<li class="list-group-item border-0 px-1 py-0 text-primary"><span>Interview Status: </span><strong>Pending</strong></li>
@@ -337,7 +347,7 @@
 												</li>
 										</ul>
 									</span>
-									<span class="col-lg-6 mb-6">
+									<span class="col-lg-6 mb-3">
 										<ul class="list-group p-2 border">
 											<li class="list-group-item border-0 px-1 py-0"><strong>Test FeedBack</strong></li>
 												<li class="list-group-item border-0 px-1 py-0 text-primary">Pending For Feedback</li>
