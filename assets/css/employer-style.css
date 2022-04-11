@@ -304,7 +304,7 @@ a.article:hover {
  }
 
  .step-form .tab {
-     display: none;
+     /*display: none;*/
     padding: 15px;      
  }
 
@@ -339,7 +339,7 @@ a.article:hover {
  }
 
  .step-form .thanks-message {
-     display: none;
+     /*display: none;*/
         padding: 10px;
  }
 
@@ -412,9 +412,9 @@ h5.ques-number span strong {
 #nextprevious {
     padding: 10px;
 }
-.code-panel {
+/*.code-panel {
     display: none;
-}
+}*/
 .markques {
     margin-left: 1rem;
 }
@@ -472,12 +472,11 @@ i.cancel {
     margin-bottom: 1rem;
 }
 #conversation-panel .message {
-    background: #f1f1f1 !important;
+    /*background: #0d6efd !important;*/
     padding: 0.4rem;
     border-radius: 10px;
     margin-bottom: 3px;
     font-size: 14px;
-    color: #000000;
 }
 #conversation-panel {
     background: #333a3d;

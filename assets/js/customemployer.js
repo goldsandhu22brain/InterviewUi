@@ -39,12 +39,12 @@ $('.users').owlCarousel({
 
 
 //to be removed as this follows custom logic which we already have
-$(document).ready(function(){
-   $(".code-panel").hide();
-   $("#btn-send-test").on("click",function(){
-      $(".code-panel").show();
-   });
-});
+//$(document).ready(function(){
+//   $(".code-panel").hide();
+//   $("#btn-send-test").on("click",function(){
+//      $(".code-panel").show();
+//   });
+//});
 
 
 
@@ -87,13 +87,13 @@ $(document).ready(function(){
 
  if ( document.getElementById("timer") != null ) {
 
-var timerVar = setInterval(countTimer, 1000);
-var totalSeconds = 0;
+     var timerVar = setInterval(countTimer, 1000);
+     var totalSeconds = startTimer;
 function countTimer() {
        ++totalSeconds;
        var hour = Math.floor(totalSeconds /3600);
        var minute = Math.floor((totalSeconds - hour*3600)/60);
-       var seconds = totalSeconds - (hour*3600 + minute*60);
+       var seconds = Math.floor(totalSeconds - (hour*3600 + minute*60));
        if(hour < 10)
          hour = "0"+hour;
        if(minute < 10)
