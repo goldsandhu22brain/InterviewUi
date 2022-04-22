@@ -5467,3 +5467,9 @@ h1.temaa {
 .dropdown-submenu:hover .dropdown-menu {
     display: block;
 }
+.case.active {
+    display: block;
+}
+.case {
+    display: none;
+}

@@ -674,3 +674,27 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+
+
+/* Code for previous and next buttons */
+$(function() {
+    var nextBtn = $("#nextBtn"),
+        prevBtn = $("#prevBtn");
+  
+    nextBtn.on('click', function(e) {
+        var active = $(".active");
+        var next = active.next('.case');
+        if (next.length) {
+            active.removeClass('active');
+            next.addClass('active');
+        }
+    });
+    prevBtn.on('click', function(e) {
+        var active = $(".active");
+        var prev = active.prev('.case');
+        if (prev.length) {
+            active.removeClass('active');
+            prev.addClass('active');
+        }
+    });
+});
