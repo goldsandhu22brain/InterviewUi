@@ -9,11 +9,15 @@ $(window).scroll(function () {
 });
 
 
-
-
+$(document).ready(function () {
+    $('.dropdown-submenu a.dropsub').on("click", function (e) {
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+});
 
 $(document).ready(function () {
-
     $('.quiz').owlCarousel({
         loop: true,
         center: true,
@@ -80,8 +84,10 @@ $(document).ready(function () {
     }, false);
 })();
 
-
-
+function switchVisible() {
+    $("#logindisplay").hide();
+    $("#forgethide").show();
+}
 
 $('body').on("click touchstart", "#Button1", function (e) {
     $("#logindisplay, #forgethide").toggle();
