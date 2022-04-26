@@ -5071,7 +5071,7 @@ h1.temaa {
 
 .flat-features .features-box:hover .item-shape,
 .flat-features .features-box.active .item-shape {
-    background-color: #e8505b;
+    background-color: #523be7;
 }
 
 .flat-features .features-box:hover .item-shape.item-shape2,
@@ -5130,8 +5130,8 @@ h1.temaa {
 .flat-features .box-content .post-readmore .read-more,
 .flat-latest .post-readmore .read-more.read-more{
     position: relative;
-    border: 1px solid #d6032e;
-    background-color: #d6032e;
+    border: 1px solid #523be7;
+    background-color: #523be7;
     color: #fff;
     line-height: 45px;
     width: 45px;
@@ -5168,7 +5168,7 @@ h1.temaa {
 .flat-features .box-content:hover .post-readmore .read-more, .flat-features .box-content.active .post-readmore .read-more {
     width: 144px;
 }
-.round-anim { content: ""; position: absolute; top: -10%; left: 0; width: 700px; height: 700px; border: 50px solid rgb(232 80 91 / 20%); border-radius: 50%; display: inline-block; z-index: -1; animation-name: zoom-fade; animation-duration: 5000ms; transform-origin: 70% 70%; animation-iteration-count: infinite; animation-timing-function: linear; }
+.round-anim { content: ""; position: absolute; top: -10%; left: 0; width: 700px; height: 700px; border: 50px solid #d60503; border-radius: 50%; display: inline-block; z-index: -1; animation-name: zoom-fade; animation-duration: 5000ms; transform-origin: 70% 70%; animation-iteration-count: infinite; animation-timing-function: linear; }
 .round-anim.right { right: -10%; left: inherit; }
 .round-anim.center { left: 50%; margin-left: -350px }
 
@@ -5195,7 +5195,7 @@ h1.temaa {
 .img-box img { width: 100%; }
 .title-bdr { position: relative; width: 150px; margin-bottom: 40px; }
 .text-center .title-bdr { margin-left: auto; margin-right: auto; }
-.left-bdr, .right-bdr { height: 6px; width: 60px; background-color: #e8505b; border-radius: 10px; position: absolute; }
+.left-bdr, .right-bdr { height: 6px; width: 60px; background-color: #5c3dec; border-radius: 10px; position: absolute; }
 .left-bdr { left: 0px; animation: left 2s infinite; }
 .right-bdr { right: 0px; animation: right 2s infinite; }@keyframes left {
   0%, 50%, 100% { width: 60px; }
@@ -5215,17 +5215,20 @@ h1.temaa {
     border-radius: 30px;
 }
 .btn.btn-theme {
-    background: #03d665;
+    background: #d10605;
     color: #ffffff;
+}
+#about .btn.btn-white {
+    background: #ffffff;
+    color: #322f55;
+    box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    margin-left: 10px;
 }
 #about .btn {
     padding: 12px 25px;
     font-weight: 600;
-    background: none;
-    color: #322f55;
     overflow: hidden;
-    border-radius: 7px;
-    border: none;
+    border-radius: 30px;
     position: relative;
     z-index: 9;
 }
@@ -5293,7 +5296,7 @@ h1.temaa {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
 .image-anim { position: relative; }
-.image-anim::before { content: ""; position: absolute; top: -20%; left: -10%; width: 550px; height: 550px; border: 50px solid #fadcde; border-radius: 50%; display: inline-block; z-index: -1; animation-name: zoom-fade; animation-duration: 5000ms; transform-origin: 70% 70%; animation-iteration-count: infinite; animation-timing-function: linear; }
+.image-anim::before { content: ""; position: absolute; top: -20%; left: -10%; width: 550px; height: 550px; border: 50px solid #5c3dec; border-radius: 50%; display: inline-block; z-index: -1; animation-name: zoom-fade; animation-duration: 5000ms; transform-origin: 70% 70%; animation-iteration-count: infinite; animation-timing-function: linear; }
 .list-icon li i {
     position: absolute;
     left: 0;
