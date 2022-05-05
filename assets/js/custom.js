@@ -61,6 +61,32 @@ $(document).ready(function () {
             }
         }
     });
+    
+        // Portfolio Slider 
+    $('.portfolio-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [
+            "<i class='fa fa-angle-left' aria-hidden='true'></i>",
+            "<i class='fa fa-angle-right' aria-hidden='true'></i>"
+        ],
+        responsive:{
+            0:{
+                items: 1
+            },
+            768:{
+                items: 2
+            },
+            1000:{
+                items: 3
+            }
+        }
+    })
 });
 
 
@@ -704,3 +730,19 @@ $(function() {
         }
     });
 });
+
+
+
+
+// FAQ Accordion JS
+	$('.accordion').find('.accordion-title').on('click', function(){
+		// Adds Active Class
+		$(this).toggleClass('active');
+		// Expand or Collapse This Panel
+		$(this).next().slideToggle('fast');
+		// Hide The Other Panels
+		$('.accordion-content').not($(this).next()).slideUp('fast');
+		// Removes Active Class From Other Titles
+		$('.accordion-title').not($(this)).removeClass('active');		
+	});
+

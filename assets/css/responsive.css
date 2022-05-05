@@ -124,6 +124,17 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .faq-img img {
+    height: auto;
+    -webkit-animation: none;
+    animation: none;
+}
+    div[class*='col-']:not(:last-of-type) {
+    margin-bottom: 20px !important;
+}
+    .analysis-form-wrap input[type=submit] {
+    margin-left: 0px;
+}
 .image-anim::before {
     width: 300px;
     height: 300px;
