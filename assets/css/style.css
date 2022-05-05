@@ -4992,7 +4992,7 @@ h1.temaa {
 --------------------------------------------------------------*/
 .flat-features {
     margin             : 3px 0 -13px 0;
-    background-image   : url(../img/public/mark-features.png);
+    background-image   : url(~/assets/img/public/mark-features.png);
     background-repeat  : no-repeat;
     background-position: center;
 }
