@@ -124,7 +124,7 @@
 					  </ul>
 						</li>
 						<li class="list-inline-item nav-item ms-0">
-						  <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Request a demo</a>
+						  <a class="nav-link btn btn-primary text-white btn-req" data-bs-toggle="modal" data-bs-target="#requestdemo" href="#">Request a demo</a>
 						</li>
 					</ul>
 					  </span>
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="action-btns mt-4">
-                            <a href="#" class="btn secondary-solid-btn mr-3">Start Now</a>
+                            <a href="#" class="btn secondary-solid-btn mr-3" data-bs-toggle="modal" data-bs-target="#feedbackdemo">Contact Now</a>
                             <a href="#" class="btn secondary-outline-btn">Learn More</a>
                         </div>
                     </div>
@@ -1761,6 +1761,24 @@
     </div>
   </div>
 </div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="feedbackdemo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLabel">GET A FEEDBACK TO US</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5> Which of these options best describes you:</h5> 
+          <form action="#" method="post" class="needs-validation" novalidate="">
+              <div id="zsfeedbackwidgetdiv"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 		 <!-- jQuery JS -->	  
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	  <!-- Bootstrap JS -->
@@ -1774,6 +1792,6 @@
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
+<script src="https://desk.zoho.com/portal/api/feedbackwidget/726816000000196185?orgId=778255622&displayType=embeded"></script>
 </body>
 </html>
