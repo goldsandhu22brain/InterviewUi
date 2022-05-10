@@ -124,6 +124,27 @@ header.fixed-top.sticky .navbar-dark .navbar-toggler {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+.about-us-right .media-left {
+    display: block;
+    float: none;
+    text-align: center;
+}
+    .about-us-right .media-heading {
+    margin: 20px 0;
+}
+    .about-us-left, .about-us-right {
+    padding: 45px 15px;
+}
+    .about-us-right .media-body {
+    text-align: center;
+        padding: 0;
+}
+.hero-section {
+    height: 400px;
+}
+    .about-us-left {
+    padding: 25px 5px;
+}
     .faq-img img {
     height: auto;
     -webkit-animation: none;
