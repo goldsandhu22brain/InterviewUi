@@ -48,7 +48,7 @@ $('.logo-carousel').owlCarousel({
             items:3
         },
         1000:{
-            items:5
+            items:6
         }
     }
 })
@@ -76,7 +76,7 @@ $('.clients-carousel').owlCarousel({
 
 $('.testimonial-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:30,
     nav:false,
     dots:false,
     autoplay:true,
@@ -94,3 +94,10 @@ $('.testimonial-carousel').owlCarousel({
         }
     }
 })
+
+document.addEventListener('click',function(e){
+  // Hamburger menu
+  if(e.target.classList.contains('hamburger-toggle')){
+    e.target.children[0].classList.toggle('active');
+  }
+}) 

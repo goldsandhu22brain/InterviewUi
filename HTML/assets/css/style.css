@@ -60,9 +60,17 @@ border: 3px solid #fff;
 .toggle-top button {
     padding: 0px 5px;
 }
-header.fixed-top.sticky {
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+    width: 90%;
+    top: auto;
+    left: 5%;
+}
+header.fixed-top1.sticky {
     background: #fff;
     top: 0;
+    position: fixed;
+    z-index: 2;
+    transition: all ease-in-out .3s;
 }
 header .navbar-brand:hover {
     color: #fff;
@@ -78,7 +86,7 @@ font-family: 'Poppins', sans-serif;
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
     color: rgb(125 62 250);
 }
-header.fixed-top.sticky .navbar-nav .nav-link {
+header.fixed-top1.sticky .navbar-nav .nav-link {
     color: #002856;
 }
 .heading h1.display-4,
@@ -121,6 +129,15 @@ font-family: 'Poppins', sans-serif;
 	background: transparent;
 }
 /* ---------Header css start------------  */
+.fixed-top1.sticky .white-logo {
+    display: block;
+}
+.fixed-top1.sticky .color-logo {
+    display: none;
+}
+.fixed-top1 .white-logo {
+    display: none;
+}
 .navbar-dark .nav-link {
     font-size: 14px;
     text-transform: uppercase;
@@ -136,11 +153,12 @@ header span.navbar-text .navbar-nav li a {
     padding: 7px 15px;
 }
 
-header.fixed-top {
-    box-shadow: 0 3px 10px 0 rgb(49 64 71 / 8%);
+header.fixed-top1 {
+   border-bottom: 1px solid rgba(255,255,255,.15);
+       background: #0098db;
 }
 header .navbar .navbar-nav .nav-item {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 span.navbar-text .dropdown-item, 
 span.navbar-text .dropdown-item:hover {
@@ -151,6 +169,58 @@ span.navbar-text .dropdown-item:hover {
 }
 select.form-control {
     color: #6c757d;
+}
+.navbar-toggler .hamburger-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    float: right;
+}
+.navbar-toggler .hamburger-toggle .hamburger {
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(0deg);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+}
+header .dropdown-menu .list-group-item {
+    font-size: 12px;
+    border: 0;
+    padding: 5px 0;
+}
+.dropdown-menu h5 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.navbar-toggler .hamburger-toggle .hamburger span:first-child {
+    top: 10%;
+    transform-origin: 50% 50%;
+    transform: translate(0% -50%)!important;
+}
+.navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.navbar-toggler .hamburger-toggle .hamburger span:last-child {
+    left: 0;
+    top: auto;
+    bottom: 10%;
+    transform-origin: 50% 50%;
+}
+.navbar-toggler .hamburger-toggle .hamburger span {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #333;
+    border-radius: 2px;
+    z-index: 1;
+    transition: transform .2s cubic-bezier(.77,.2,.05,1),background .2s cubic-bezier(.77,.2,.05,1),all .2s ease-in-out;
+    left: 0;
 }
 /* ---------Header css End------------  */
 .btn-req {
@@ -230,6 +300,9 @@ select.form-control {
 }
 button.btn.rounded-pill {
     padding: 13px 31px !important;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1em;
 }
 .clients-carousel .item h4 {
     border: 1px solid #eaeaea;
@@ -253,38 +326,95 @@ button.btn.rounded-pill {
 }
 .testimonial-box p, .address-box p {
     color: #777;
+        font-size: 15px;
+    line-height: 1.75;
+}
+.testimonial-box hr.separator-reduced {
+    border-color: #a9a6a6;
+    width: 90px;
+    border-top-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-style: solid;
+}
+.address-box a.address-btn {
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .address-box i {
     color: #0cb4ce;
 }
+.get-section p, .clients-section p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.75;
+}
 /* ---------Footer css Start------------  */
 
 .footer-main {
-	background-image: radial-gradient(49% 0,#4e4c62 1%,#26252f 60%);
-    color: #fff;
-    position: relative;
+position: relative;
+    background-color: #ddd;
+    color: #303133;
 }
 .footer-main .wiedget-title {
-    color: #ffffff;
-    font-family: 'MyriadProBold';
+    color: #303133;
     font-size: 20px;
     letter-spacing: 1px;
 }
 .footer-main ul li {
-    margin: 15px 0;
+    margin: 0;
+}
+.footer-main .btn-fab1 i {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main .btn-fab1 i.fa-facebook {
+    color: #3677ba;
+}
+.footer-main .btn-fab1 i.fa-instagram {
+    color: #f8504d;
+}
+.footer-main .btn-fab1 i.fa-linkedin{
+    color: #1879b1;
+}
+.footer-main .btn-fab1 i.fa-twitter{
+    color: #23abdb;
+}
+.footer-main .btn-fab1 i.fa-youtube{
+    color: #d1342f;
+}
+
+.footer-main .btn-fab1 {
+    border-radius: 10px 10px 10px 0px;
+    padding: 0;
+    margin-right: 10px;
+}
+.footer-main .btn-primary {
+    color: #348bff;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 .footer-main ul li a {
-    color: #fff;
+    color: #303133;
     text-decoration: none;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: #2C316E;
-    border-radius: 0px 0px 0px 0px;
-    padding: 10px 0;
+    padding: 0;
+    font-size: 14px;
+}
+.footer-main ul li a i {
+    position: relative;
+    top: 5px;
 }
 .footer-main ul {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 .footer-main .foosec2 img {
 padding: 15px;
@@ -295,7 +425,7 @@ padding: 15px;
     box-shadow: 0 7px 18px 0 rgb(0 0 0 / 20%);
 }
 .footer-main #copyrights p {
-    color: #fff;
+    color: #303133;
     margin-bottom: 0;
     font-size: 14px;
 }
@@ -305,7 +435,7 @@ padding: 15px;
     margin-top: 60px;
 }
 .footer-main .copyright-links a {
-    color: #fff;
+    color: #303133;
     text-decoration: none;
     font-size: 14px;
 }
@@ -338,7 +468,7 @@ padding: 15px;
     font-weight: 800;
     font-size: 60px;
 font-family: 'MyriadProBold';
-    color: #fff;
+    color: #303133;
     letter-spacing: -3px;
 }
 .footer-main .featureItem  .value .unit {
