@@ -1813,6 +1813,10 @@ svg.logo text {
 .service1-icon img {
     width: 75px;
 }
+
+.service6-icon img {
+    width: 175px;
+}
 .service2-icon img {
     width: 150px;
 	margin-bottom: 20px;
@@ -7581,6 +7585,8 @@ Features Style
     position: relative;
     z-index: 1;
 }
+
+
 .counter:before,
 .counter:after{
     content: "";
@@ -7639,6 +7645,9 @@ Features Style
     border-bottom-color: #147ae4;
     border-left-color: #147ae4;
 }
+
+
+
 @media screen and (max-width:990px){
     .counter{ margin-bottom: 40px; }
 }
@@ -8199,6 +8208,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 	line-height: 28px;
 }
 
+.how-section1 .subheading2{
+    
+    font-size: 30px;
+	font-weight: 300;
+    color: #3f3d59;
+	line-height: 28px;
+}
+
 
 .how-section1 .platform{
     
@@ -8221,3 +8238,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
     width: 20%;
   }
 }
+
+
+
+
+
+
