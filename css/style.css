@@ -6349,6 +6349,13 @@ svg.logo text {
     margin-bottom: 18px;
 }
 
+#contact-info .info-box .info-details1 p {
+    margin-top: 18px;
+	font-size: 25px;
+}
+
+
+
 #contact-info .info-box .info-details p:last-child {
     margin-bottom: 0;
 }
