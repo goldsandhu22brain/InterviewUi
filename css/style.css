@@ -106,6 +106,26 @@ a, input[type="submit"] {
     margin-top: 0;
     margin-bottom: 5px;
 }
+.row-title2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.row-title3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 
 .row-title.grey-color {
     color: #44494f;
