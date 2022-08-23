@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #6c757d;
   text-align: left;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -412,7 +412,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .lead {
@@ -7319,6 +7319,7 @@ button.bg-dark:focus {
 
 .m-0 {
   margin: 0 !important;
+ 
 }
 
 .mt-0,
@@ -7578,7 +7579,7 @@ button.bg-dark:focus {
 
 .pl-4,
 .px-4 {
-  padding-left: 1.5rem !important;
+  padding-left: -0.5rem !important;
 }
 
 .p-5 {
