@@ -964,12 +964,13 @@ iframe {
 
 .video-sec-wrap {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 71vh;
+	margin-bottom: -250px;
 }
 .video-sec {
 	width: 85%;
 	margin: 3em auto;
-	border-bottom: 2px solid #353535;
+	border-bottom: 0px solid #353535;
 	text-align: left;
 }
 .video-sec-middle {
