@@ -961,21 +961,18 @@ iframe {
   background-color: #ddd;
 } 
 
-
 .video-sec-wrap {
 	width: 100%;
-	min-height: 71vh;
-	margin-bottom: -80px;
-	margin-top: -70px;
+	min-height: 100vh;
 }
 .video-sec {
 	width: 95%;
 	margin: 3em auto;
-	border-bottom: 0px solid #353535;
+	
 	text-align: left;
 }
 .video-sec-middle {
-	grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(3,1fr);
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -995,7 +992,7 @@ iframe {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	opacity: 1;
 	transition: all .2s ease-in-out;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 .thumb:hover {
 	opacity: .8;
@@ -1003,17 +1000,18 @@ iframe {
 }
 .thumb-info {
 	display: inline-block;
-	height: 00%;
+	height: 100%;
 	width: 100%;
 	padding: .4em;
 }
 .thumb-title {
 	color: #000;
-	margin: 0;
-	font-size: 1.2em;
+	
+	font-size: 12px;
+	
 }
 .thumb-user {
-	color: #7e7e7e;
+	color: #000;
 	display: block;
 	margin: 0;
 	font-size: .9em;
@@ -1022,25 +1020,25 @@ iframe {
 	color: #000;
 	display: inline-block;
 	margin: 0;
-	font-size: .7em;
+	font-size: .8em;
 }
 .video-sec-title {
 	font-weight: bolder;
 	font-size: 1.4em;
-	color: #f5f5f5;
+	color: #000;
 	margin: 5px 0 10px 10px;
 }
 .video-showmore {
 	font-weight: bold;
 	font-variant: all-petite-caps;
 	display: block;
-	color: #7e7e7e;
+	color: #000;
 	padding: 10px;
 	font-size: 1.2em;
 }
 @media only screen and (max-width: 1456px) {
 	.video-sec-middle {
-		grid-template-columns: repeat(4,1fr);
+		grid-template-columns: repeat(3,1fr);
 	}
 }
 @media only screen and (max-width: 1024px) {
@@ -1057,47 +1055,4 @@ iframe {
   .video-sec-middle {
    grid-template-columns: repeat(1,1fr);
   }
-}
-.tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  color: white;
-  font-size: 12px;
-  background-color: #192733;
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-}
-
-.hover-text:hover .tooltip-text {
-  visibility: visible;
-}
-
-#top {
-  top: -40px;
-  left: -50%;
-}
-
-#bottom {
-  top: 25px;
-  left: -50%;
-}
-
-#left {
-  top: -8px;
-  right: 120%;
-}
-
-#right {
-  top: -8px;
-  left: 120%;
-}
-
-.hover-text {
-  position: relative;
-  display: inline-block;
-  margin: 40px;
-  font-family: Avenir;
-  text-align: center;
 }
