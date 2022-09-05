@@ -163,7 +163,7 @@ img {
  
   background-color: white; 
   color: red; 
-  border: 2px solid #f44336;
+  border: 1px solid #f44336;
 
   font-size: 15px;
   font-weight: 500; 
@@ -195,7 +195,7 @@ img {
   font-weight: 600; 
   transition: 0.15s ease;
   background-color: #ff0000;
-  margin-left: 550px;
+  margin-left: 450px;
   margin-top: -80px;
   margin-bottom: 10px;
 }
