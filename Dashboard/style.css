@@ -547,6 +547,17 @@ img {
   margin-left: -280px;
 }
 
+.card12 {
+  background-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  margin-left: 80px;
+}
+
 .card-header11 span img{
   
   height: 100px;
