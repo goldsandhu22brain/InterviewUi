@@ -204,7 +204,10 @@ img {
   font-size: 1.25em;
 }
 
-
+.button11 span {
+  font-weight: 500;
+  margin-bottom: 55px;
+}
 .button span {
   font-weight: 500;
 }
@@ -574,8 +577,16 @@ img {
   flex-direction: column;
   height: 80px;
   margin-left: 80px;
+  margin-top: 80px;
 }
-
+.card13 {
+  
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .card-header11 span img{
   
   height: 100px;
@@ -789,6 +800,16 @@ margin-left: 170px;
   font-size: 0.875rem;
 }
 
+
+.card-body1 p{
+  padding: 1rem 1.25rem;
+  font-size: 18px;
+  margin-left: -19px;
+  margin-top: -10px;
+  color: #000;
+  text-align: left;
+}
+
 .card-footer {
   margin-top: auto;
   padding: 1rem 1.25rem;
@@ -869,6 +890,13 @@ html::-webkit-scrollbar-thumb {
     font-weight: 500;
     color: #000;
 	font-size: 25px;
+	
+}
+.profile-header-info11 h4 {
+    font-weight: 500;
+    color: #000;
+	font-size: 30px;
+	text-align: left;
 	
 }
 
