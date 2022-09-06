@@ -175,7 +175,23 @@ img {
   
 }
 
-
+.button5 {
+  font: inherit;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 1;
+  border: 2px solid #00cfc7;
+  color: #fff;
+  font-size: 0.875rem;
+  transition: 0.15s ease;
+  background-color: #00cfc7;
+}
 .button3 {
   font: inherit;
   color: inherit;
@@ -581,7 +597,7 @@ img {
 }
 .card13 {
   
-  margin-top: 10px;
+  margin-top: -80px;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
