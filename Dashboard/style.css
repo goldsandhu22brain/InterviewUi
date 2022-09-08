@@ -182,6 +182,7 @@ img {
   font-size: 0.875rem;
   transition: 0.15s ease;
   background-color: #f81b5f;
+  margin-left: 2px;
 }
 
 .button5 {
