@@ -1468,6 +1468,19 @@ $width: 330px;
   scroll-snap-align: start;
   transition: all 0.2s;
 }
+
+
+.card999 {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 10px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+}
 .column1 h4 {
   text-align: center;
   margin-bottom: 30px;
