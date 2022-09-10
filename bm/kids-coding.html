@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>E || Brainmeasures</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- All CSS Files -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+	 <!-- owlcarousel css -->
+	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+	 <!-- Form css -->
+	<link rel="stylesheet" href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
+	<script>
+/* Sticky Header */
+$(window).scroll(function() {
+ if ($(this).scrollTop() > 100){  
+    $('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});
+
+</script>
+</head>
+
+<body>
+
+<!--header start-->
+    <header class="fixed-top">
+
+	 <!--End header start-->
+		  <nav class="navbar py-4 navbar-expand-lg navbar-dark">
+			  <div class="container-fluid">
+				<div class="toggle-top">
+					<button class="btn navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					  <div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brad" href="index.html">E-brainmeasures</a></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					  </div>
+					  <div class="offcanvas-body">
+						<div class="dropdown mt-3">
+						  <ul>
+							<li><a class="dropdown-item" href="#">Education</a></li>
+							<li><a class="dropdown-item" href="#">Community</a></li>
+							<li><a class="dropdown-item" href="#">Library</a></li>
+							<li><a class="dropdown-item" href="#">Product</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+			  
+			  
+				<a class="navbar-brand" href="index.html">E-brainmeasures</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+				  <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Education
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+						<li><a class="dropdown-item" href="#">Founder</a></li>
+						<li><a class="dropdown-item" href="#">Idea</a></li>
+						<li><a class="dropdown-item" href="#">Formation</a></li>
+						<li><a class="dropdown-item" href="#">Planning</a></li>
+					  </ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="service.html">Service</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Community</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Library</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Product</a>
+					</li>
+				  </ul>
+					<form id="content">
+					  <input type="text" name="input" class="input" id="search-input">
+					  <button type="reset" class="search" id="search-btn"></button>
+					</form>
+					  <span class="navbar-text">
+						<ul class="navbar-nav">
+					  <li class="list-inline-item nav-item ms-2">
+						  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#registerform" href="#">Signup</a>
+						</li>
+						<li class="list-inline-item nav-item ms-2">
+						  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginform" href="#">Sign In</a>
+						</li>
+					</ul>
+					  </span>
+				</div>
+			  </div>
+			</nav>
+	 </header>
+	 <!--header End-->
+		    <div class="HomeBanner">
+				<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-md-7 home-banner-texts">
+						<h3>Coding for <span>Kids</span></h3>
+						<h4>Learn Anytime-Anywhere…
+							<br>
+							Live, Online, and with Ease!</h4>
+						<a href="#" class="h-b-btn">Choose your Course</a>
+					</div>
+					<div class="col-md-5 home-right-img">
+						<a href="#">
+							<img src="images/bannerimage.png"  class="img-fluid" alt=""></a>
+					</div>
+					</div>
+				</div>
+			</div>
+	    <div class="NextBanner">
+        <div class="container">
+			<div class="row">
+            <div class="col-md-12">
+                <h1>Redefined Online-Learning Experience</h1>
+                <p><span class="line"></span>Choosing the Best was not that Easy!<span class="line"></span></p>
+            </div>
+            <div class="col-md-12 ChoiceBlock">
+				<div class="row">
+                    <div class="col-sm-4  wow fadeInUp animated" data-wow-delay="0.4s">
+                        <div class="col-sm-12 block">
+							<div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/i3.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <h2>Smart Courses</h2>
+                                <h4><a href="#">Explore <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>
+                            </div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInUp animated" data-wow-delay="0.4s">
+                        <div class="col-sm-12 block">
+							<div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/i1.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <h2>Learning Options</h2>
+                                <h4><a href="#">Select <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4  wow fadeInDown animated" data-wow-delay="0.4s">
+                        <div class="col-sm-12 block">
+							<div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/i2.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <h2>Top Instructors</h2>
+                                <h4><a href="#">Engage <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            <div class="col-md-12 TagBlock  wow fadeInUp animated" data-wow-delay="0.4s">
+                <a href="#">HTML</a><a href="#">CSS</a><a href="#">JAVA</a><a href="#">BOOTSTARP</a><a href="#">WORDPRESS</a><a href="#">PHP</a><a href="#">SHOPIFY</a>
+                <a href="#">JQUERY</a><a href="#">BOOTSTARP</a><a href="#">CSS</a><a href="#">JAVA</a><a href="#">HTML</a>
+            </div>
+            <div class="col-md-12 TagBrowse wow bounceInUp   animated" data-wow-delay="0.4s">
+                <a href="#">BROWSE ALL COURSES</a>
+            </div>
+			</div>
+			</div>
+        </div>
+    </div>
+	    <div class="HomeStory">
+				<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-md-7 home-banner-texts">
+						<h3>Coding Classes for Kids - Introduce your child to the World of <span>Coding</span></h3>
+						<h5>Already Booked a Demo? <a href="">JOIN NOW</a></h5>
+					</div>
+					<div class="col-md-5 home-right-img">
+						<a href="#">
+							<img src="images/Woman-1.png"  class="img-fluid" alt=""></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		 <section class="orange-course service-bottom heading text-center py-5">
+			<div class="container">
+			  <div class="row align-items-center">
+				<div class="col-12 col-md-12 mb-5 mb-md-5 position-relative">
+					<h1 class="display-4">Interactive <span>Distance Learning</span></h1>
+					<p class="lead">A NEW ERA OF EDUCATION</p>
+				  </div>
+				  <div class="col-12 col-md-4">
+					  <div class="bottom-in">
+					   <img src="images/distant1.png" class="img-fluid" alt="">
+					   <h3 class="text-dark py-2 mt-2">Anywhere</h3>
+					   <p class="text-dark px-5">Focus on what you should or should not do in order to create a best plan to improve your health</p>
+					</div>
+				  </div>
+				  <div class="col-12 col-md-4">
+					<div class="bottom-in bottom-center">
+					   <img src="images/distant2.png" class="img-fluid" alt="">
+					   <h3 class="text-dark py-2 mt-2">Anytime</h3>
+					   <p class="text-dark px-5">Havng no routine is so much more draining mentally, physically and emotionally than any routine could ever</p>
+					</div>
+				  </div>
+				  <div class="col-12 col-md-4">
+					<div class="bottom-in">
+					   <img src="images/distant3.png" class="img-fluid" alt="">
+					   <h3 class="text-dark py-2 mt-2">Instant Access</h3>
+					   <p class="text-dark px-5">Food is one of the most important tools for a life lived well and long. And healthy eating is far simpler than you think</p>
+					</div>
+				  </div>
+				
+				<!--end of col-->
+			  </div>
+			  <!--end of row-->
+			</div>
+			<!--end of container-->
+		  </section>
+					   <!--Banner Start-->
+		<section class="blue-course bottom-ser heading mb-5 pb-4">
+			<div class="container">
+			  <div class="row">
+				<h1>Ready to start learning? Sign up now!</h1>
+					<a href="">Read More</a>
+			  </div>
+			</div>
+		</section>
+		  
+		  
+		  
+  	  	   <!--Banner Start-->
+	<section class="testimonial-main heading pb-4">
+		  <div class="container">
+			  <div class="row px-5">
+			  <div class="col-12 col-md-12 text-center position-relative">
+				  <h1 class="display-4"><span>What they </span>saying?</h1>
+				    <p class="lead">Read reviews from real users and their experience with Brainmeasures</p>
+				</div>
+				<div class="row testimonial-in">
+				 <div class="col-12 col-md-4 position-relative">
+				 <div class="test-image">
+					<img src="images/testimonial.jpg" class="img-fluid" alt="Basic">
+					<i class="fa fa-quote-right" aria-hidden="true"></i>
+					</div>
+				</div>
+				 <div class="col-12 col-md-8 position-relative standard">
+				  <div class="review owl-carousel owl-theme">
+					<div class="item">
+						<div class="testimonial-item">
+							<div class="testimonial-box hover-from-left">
+								<div class="icon-content">
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+								<div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
+								<div class="comment-header">
+									<ul class="rating-stars">
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+									</ul></div>
+								<div class="comment-bio">
+								<span class="profile-info">
+									<strong class="profile-name">Alena Huffman</strong>
+									<p class="profile-des">Students</p>
+								</span>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimonial-item">
+							<div class="testimonial-box hover-from-left">
+								<div class="icon-content">
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+								<div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
+								<div class="comment-header">
+									<ul class="rating-stars">
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+									</ul></div>
+								<div class="comment-bio">
+								<span class="profile-info">
+									<strong class="profile-name">Alena Huffman</strong>
+									<p class="profile-des">Students</p>
+								</span>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimonial-item">
+							<div class="testimonial-box hover-from-left">
+								<div class="icon-content">
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+								<div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco </p></div>
+								<div class="comment-header">
+									<ul class="rating-stars">
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+										<li><i aria-hidden="true" class="fa fa-star"></i></li>
+									</ul></div>
+								<div class="comment-bio">
+								<span class="profile-info">
+									<strong class="profile-name">Alena Huffman</strong>
+									<p class="profile-des">Students</p>
+								</span>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		  </section>
+		     <!--Ban--->
+
+		<footer class="footer-main">
+		  <div class="container">
+			  <div class="row">
+			  <div class="kidLhs-main">
+			  <div class="row">
+			   <div class="col-12 col-md-6 position-relative">
+				  <div class="kidLhs">
+					<h1 class="whiteHeader">Book a free online</h1>
+					<h1 class="whiteHeader">counselling session</h1>
+					<div class="description">
+						Have any questions? An experienced Toppr Agent will be able to answer any questions you have and discuss
+						academic goals as well as the unique needs of the learner.
+					</div>
+					<div class="buttonWrapper">
+						<a href="/demo">
+						<div class="getSubscription">
+							<div class="getSubscriptionWrapper">
+							<span>book demo</span>
+							<span>
+							<svg height="10" viewBox="0 0 27 13" width="23" xmlns="http://www.w3.org/2000/svg">
+							<path d="m113.23125 6.796875 4.025-3.9375-1.00625-.984375-5.75 5.625 5.75 5.625 1.00625-.984375-4.025-3.9375h23.14375v-1.40625z" fill="#fff" fill-rule="evenodd" transform="matrix(-1 0 0 1 136.875 -1)"></path>
+							</svg>
+							</span>
+							</div>
+						</div>
+						</a>
+						<a href="/learn/plus/">
+							<div class="chatWithUs">
+							subscribe now
+							</div>
+						</a>
+					</div>
+					</div>
+			  </div>
+			  
+			    <div class="col-12 col-md-6 position-relative">
+				<img class="img-fluid" src="images/start.png" alt="">
+				</div>
+			  </div>
+			  </div>
+			  <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
+				  <div class="statsLhs">
+					<h1 class="statsHeader">Students love using Brainmeasures</h1>
+					<div class="studentCount">
+						23,134,501
+						</div>
+						<div class="description">
+						<span class="textGradient">Happy students</span>
+					</div>
+				</div>
+				
+				</div>
+				<div class="col-12 col-md-6 mb-5 pb-4 position-relative">
+				<div class="statsRhs">
+					<div class="statsListItem">
+						<img class="img-fluid" src="images/attempted-question.png" alt="">
+						<div>
+						<div class="value">976,055,412</div>
+						<div class="label">Questions Practiced</div>
+						</div>
+					</div>
+					<div class="statsListItem">
+						<img class="img-fluid" src="images/doubts-answered.png" alt="">
+						<div>
+						<div class="value">11,898,432</div>
+						<div class="label">Tests Taken</div>
+						</div>
+					</div>
+					<div class="statsListItem">
+						<img class="img-fluid" src="images/doubts-done.png" alt="">
+						<div>
+						<div class="value">29,773,051</div>
+						<div class="label">Doubts Answered</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			  	<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<span class="quantity">5 - 12</span>
+					<span class="unit">Classes</span>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value boardsGradient">
+						<span class="quantity">22</span>
+						<span class="unit">Boards</span>
+					</div>
+				</div>
+				</div>
+				
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<span class="quantity">58</span>
+						<span class="unit">Exams</span>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 divider"></div>
+				<!--end of col-->
+			   <div class="col-12 col-md-3">
+					<div class="wiedget-title">OFFICE</div>
+					<p>Brainmeasures Solutions,<br> 5715 Will Clayton,<br> #8121 Humble,<br> TX 77338, USA <br> <abbr title="Phone Number"><strong>TollFree:</strong></abbr> +1 888 556 0061 (USA/CANADA)<br> </p>
+			   </div>
+			   <div class="col-12 col-md-2">
+					<div class="wiedget-title">QUICK LINKS</div>
+					<ul> 
+						<li><a href="#">Be an Affiliate</a></li> 
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Report Bug</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+			   </div>
+			   <div class="col-12 col-md-2">
+					<div class="wiedget-title">QUICK LINKS</div>
+					<ul> 
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Feed backs</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+			   </div>
+			   <div class="col-12 col-md-5">
+					<div class="row"> 
+						<div class="col-md-6"> 
+							<div class="counter counter-small">
+							<span>1565421</span>
+							</div>
+						<h5 class="nobottommargin">Total User</h5> 
+						</div>
+						<div class="col-md-6"> 
+							<div class="counter counter-small"><span>2642</span>
+							</div>
+						<h5 class="nobottommargin">Total Courses</h5> 
+						</div>
+						<p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+					</div>
+			   </div>
+			  <div class="row foosec2 pt-4"> 
+				  <div class="col-12 col-md-3"> 
+					  <div class="row"> 
+					  <div class="col-12 col-md-6"> 
+					  <img class="img-fluid" src="images/forbs1.png"> </div>
+					  <div class="col-12 col-md-6"> 
+					  <img class="img-fluid" src="images/forbs2.png"> </div>
+					  </div>
+					</div>
+				  <div class="col-12 col-md-9"> 
+					<p> Brainmeasures today boosts of more than 1 million Certified Professionals and client list includes big names in corporate world that trust Brainmeasures Employment Testing Solutions for their post &amp; pre hiring needs. Certification by Brainmeasures gives you an edge at every stage of your career - getting a new job, a promotion or even looking for a career change. All Brainmeasures products are designed to help you reach your goals. </p>
+				  </div>
+			  </div>
+			  </div>
+			  </div>
+			  <div id="copyrights"> 
+				  <div class="container">  
+					  <div class="row">
+						  <div class="col-12 col-md-6"> <p><span>BRAINMEASURES</span>Copyright © 2021 brainmeasures.com. All Rights Reserved</p></div>
+						  <div class="col-12 col-md-6 col_last tright"> 
+							  <div class="copyright-links">
+							  <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+							  </div>
+						  </div>
+					  </div>
+				</div>
+			  </div>
+		  </footer>
+
+<!-- Modal -->
+<div class="feature modal fade" id="technical" tabindex="-1" aria-labelledby="technical" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="technical">Skill Test Technical<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>1-1 Classes</li>
+		<li>1 Many Classes</li>
+		<li>Hobby Classes</li>
+		<li>Coding Classes</li>
+		<li>Competitive Exams prepration</li>
+		<li>Video Classes (Self-Paced)</li>
+		<li>Online Tests</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="nontechnical" tabindex="-1" aria-labelledby="nontechnical" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nontechnical">Skill Test Non-Technical<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+		
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>1-1 Tutions</li>
+		<li>Group Tutions</li>
+		<li>Vocational Classes</li>
+		<li>Learn to Code</li>
+		<li>Prepare for Competitive Exams</li>
+		<li>Self-Paced Courses</li>
+		<li>Skill Tests</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="integrate" tabindex="-1" aria-labelledby="integrate" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="integrate">Integrate Service<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Get complete LMS system customized to your needs</li>
+		<li>Conduct online exams </li>
+		<li>Vocational Classes</li>
+		<li>Get Quote</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="document" tabindex="-1" aria-labelledby="document" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="document">Document Course<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Reach companies across globe</li>
+		<li>Earn well</li>
+		<li>Upload Self-Paced</li>
+		<li>Live conrots</li>
+		<li>Global Reach</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="quiz" tabindex="-1" aria-labelledby="quiz" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quiz">Quiz<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>1-1 Tutions</li>
+		<li>Group Tutions</li>
+		<li>Vocational Classes</li>
+		<li>Learn to Code</li>
+		<li>Prepare for Competitive Exams</li>
+		<li>Self-Paced Courses</li>
+		<li>Skill Tests</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="record" tabindex="-1" aria-labelledby="record" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="record">Recorded Video<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="live" tabindex="-1" aria-labelledby="live" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="live">Live streaming<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="offline" tabindex="-1" aria-labelledby="offline" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="offline">Offline Class<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="hobbies" tabindex="-1" aria-labelledby="hobbies" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hobbies">Hobbies class<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="itcourse" tabindex="-1" aria-labelledby="itcourse" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="itcourse">IT Course<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="languages" tabindex="-1" aria-labelledby="languages" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="languages">Languages<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="tution" tabindex="-1" aria-labelledby="tution" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tution">Tution<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+		<li>Coding classes for kids</li>
+		<li>1-1 coding classes</li>
+		<li>Learn the skill of future Builds APS</li>
+		<li>Develop analytical skills</li>
+		</ul>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="registerform" tabindex="-1" aria-labelledby="registerform" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerform">Create an Account<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		  <div class="row d-flex justify-content-center align-items-center mb-4 h-100">
+			<div class="col-12 col-md-9 col-lg-7 col-xl-8">
+				  <form>
+					<div class="form-outline mb-3">
+					  <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Your Name" />
+					  <label class="form-label" for="form3Example1cg">Your Name</label>
+					</div>
+
+					<div class="form-outline mb-3">
+					  <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Your Email" />
+					  <label class="form-label" for="form3Example3cg">Your Email</label>
+					</div>
+
+					<div class="form-outline mb-3">
+					  <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password" />
+					  <label class="form-label" for="form3Example4cg">Password</label>
+					</div>
+
+					<div class="form-outline mb-3">
+					  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Repeat your password" />
+					  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+					</div>
+					<div class="mb-3 g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div> 
+					<div class="form-check d-flex justify-content-center mb-4">
+					  <input
+						class="form-check-input me-2"
+						type="checkbox"
+						value=""
+						id="form2Example3cg"
+					  />
+					  <label class="form-check-label" for="form2Example3g">
+						I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+					  </label>
+					</div>
+					
+					<div class="d-flex justify-content-center">
+					  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4">Register</button>
+					</div>
+					 <div class="divider bg-light d-flex align-items-center justify-content-center my-4">
+					<p class="text-center fw-bold mx-3 mb-0">Or</p>
+				  </div>
+					<button class="btn w-100 btn-block text-white mb-2" style="background-color: #dd4b39;" type="submit"><i class="fa fa-google me-2"></i> Sign in with google</button>
+            <button class="btn w-100 btn-block text-white mb-2" style="background-color: #3b5998;" type="submit"><i class="fa fa-facebook-f me-2"></i>Sign in with facebook</button>
+					<p class="text-center text-muted mt-3 mb-0">Have already an account? <a href="#!"  id="loginbtn" data-bs-toggle="modal" data-bs-target="#loginform" class="fw-bold text-body"><u>Login here</u></a></p>
+
+				  </form>
+			</div>
+		  </div>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+
+<div class="feature modal fade" id="loginform" tabindex="-1" aria-labelledby="loginform" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginform">Login<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+			<div class="row d-flex justify-content-center align-items-center h-100">
+			  <div class="col-md-8 col-lg-6 col-xl-8">
+				<form>
+				  <!-- Email input -->
+				  <div class="form-outline mb-3">
+					<input type="email" id="form3Example3" class="form-control form-control-lg"
+					  placeholder="Enter a valid email address" />
+					<label class="form-label" for="form3Example3">Email address</label>
+				  </div>
+
+				  <!-- Password input -->
+				  <div class="form-outline mb-3">
+					<input type="password" id="form3Example4" class="form-control form-control-lg"
+					  placeholder="Enter password" />
+					<label class="form-label" for="form3Example4">Password</label>
+				  </div>
+
+				  <div class="d-flex justify-content-between align-items-center">
+					<!-- Checkbox -->
+					<div class="form-check mb-0">
+					  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+					  <label class="form-check-label" for="form2Example3">
+						Remember me
+					  </label>
+					</div>
+					<a href="#!" id="forgotbtn" data-bs-toggle="modal" data-bs-target="#forgetform" class="text-body">Forgot password?</a>
+				  </div>
+
+				  <div class="text-center text-lg-start mt-4 pt-2">
+					<button type="button" class="btn btn-primary btn-lg"
+					  style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+					   <div class="divider bg-light d-flex align-items-center justify-content-center my-4">
+					<p class="text-center fw-bold mx-3 mb-0">Or</p>
+				  </div>
+					<button class="btn w-100 btn-block text-white mb-2" style="background-color: #dd4b39;" type="submit"><i class="fa fa-google me-2"></i> Sign in with google</button>
+            <button class="btn w-100 btn-block text-white mb-2" style="background-color: #3b5998;" type="submit"><i class="fa fa-facebook-f me-2"></i>Sign in with facebook</button>
+					<p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!" id="registerbtn"
+						 data-bs-toggle="modal" data-bs-target="#registerform" class="link-danger">Register</a></p>
+				  </div>
+
+				</form>
+			  </div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="feature modal fade" id="forgetform" tabindex="-1" aria-labelledby="forgetform" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forgetform">Forget Password<br><img src="images/underline.png" class="img-fluid" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		  <div class="row d-flex justify-content-center align-items-center mb-4 h-100">
+			<div class="col-12 col-md-9 col-lg-7 col-xl-8">
+				  <form>
+					<div class="form-outline mb-3">
+					  <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="New password" />
+					  <label class="form-label" for="form3Example4cg">New password</label>
+					</div>
+
+					<div class="form-outline mb-3">
+					  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Confirm password" />
+					  <label class="form-label" for="form3Example4cdg">Confirm password</label>
+					</div>
+
+					<div class="form-check d-flex justify-content-center mb-5">
+					  <input
+						class="form-check-input me-2"
+						type="checkbox"
+						value=""
+						id="form2Example3cg"
+					  />
+					  <label class="form-check-label" for="form2Example3g">
+						I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+					  </label>
+					</div>
+
+					<div class="d-flex justify-content-center">
+					  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4">Register</button>
+					</div>
+				
+					<p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" data-bs-toggle="modal" data-bs-target="#loginform" class="fw-bold text-body"><u>Login here</u></a></p>
+
+				  </form>
+			</div>
+		  </div>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap framework js -->
+  <script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+	<script src="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	
+</body>
+
+</html>
