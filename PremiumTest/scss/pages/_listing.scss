@@ -1,0 +1,481 @@
+.listing-page-content {
+    background-image: url(../images/listing-page-bg-img.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 50px;
+
+    .list-wrapper {
+        @include flexbox;
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+
+        .list-item {
+            padding-right: 15px;
+            width: calc((100% - 70px)/3);
+            margin-bottom: 60px;
+            padding-left: 15px;
+
+            @include md-max {
+                width: calc((100% - 40px)/2);
+            }
+
+            @include sm-max {
+                width: calc((100% - 0px)/1);
+            }
+
+        }
+    }
+
+
+    .simple-pagination ul {
+        margin: 0 0 20px;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .simple-pagination li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .simple-pagination .current {
+        color: #FFF;
+        background-color: #FF7182;
+        border-color: #FF7182;
+    }
+
+    .pagination {
+        @include justify-content(center);
+
+        .pagination-button {
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            width: 48px;
+            height: 48px;
+            @include flexbox;
+            @include justify-content(center);
+            @include align-items(center);
+            cursor: pointer;
+            margin: 0 10px;
+
+            &.page-num {
+                border: 1px solid #C2ACFF;
+                @include border-radius(50px);
+
+                &.active {
+                    background-color: #6967FF;
+                    box-shadow: 0px 10px 30px rgba(105, 103, 255, 0.5);
+                    color: $white;
+                }
+            }
+
+            i {
+                font-size: 20px;
+                color: #6967FF;
+            }
+        }
+    }
+
+    &.listing-all-courses {
+        .listing-all-courses-heading-para {
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 55px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .best-courses-enrolled {
+            img {
+                max-width: 25px;
+                margin-right: 10px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+            }
+
+            strong {
+                color: #6967FF;
+            }
+
+            margin-bottom: 5px;
+        }
+
+        .best-courses-total-hours {
+            img {
+                max-width: 25px;
+                margin-right: 10px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+
+                strong {
+                    color: #6967FF;
+                }
+            }
+
+            margin-bottom: 5px;
+        }
+
+        .best-courses-slider-items-footer {
+            margin-bottom: 55px;
+        }
+
+        .best-courses-slider-items-react-icon {
+            top: 26px;
+        }
+
+        .best-courses-slider-items-footer {
+            border: none;
+        }
+
+        .best-courses-slider-items-body {
+            padding-bottom: 20px;
+        }
+
+        .best-courses-slider-items-button {
+            .best-courses-slider-items-react-icon {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .list-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .list-item {
+                width: calc((100% - 40px)/2);
+
+                @include sm-max {
+                    width: calc((100% - 0px)/1);
+                }
+            }
+        }
+    }
+
+    &.listing-all-courses {
+        padding-top: 100px;
+
+        .h4 {
+            font-weight: 800;
+        }
+
+        @include md-max {
+            padding-top: 70px;
+        }
+    }
+
+    &.details-page-list {
+        background-image: none;
+        background-image: url(../images/dotted-bg.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        .listing-all-courses-heading-para {
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 55px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .list-wrapper {
+            margin-top: 55px;
+            max-width: 1110px;
+            margin: 0 auto;
+
+            .list-item {
+                border-radius: 20px;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding: 30px 30px 20px 30px;
+                position: relative;
+
+                @include sm-max {
+                    padding: 10px 10px 0px 10px;
+                }
+
+                .best-courses-slider-items {
+                    border: 0px;
+                    box-shadow: none;
+                    border-radius: 0px;
+                    display: block;
+                    border-top: 0;
+                    background-color: transparent;
+                    color: $white;
+                    padding-bottom: 25px;
+                  
+
+                    h6 {
+                        color: $white;
+                        font-size: 30px;
+                        line-height: 44px;
+                        font-weight: bold;
+                    }
+
+                    .best-courses-about-text {
+                        color: $white;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+
+                    .best-courses-slider-items-footer {
+                        border: 0;
+                        margin-bottom: 30px;
+                        justify-content: flex-start;    flex-wrap: wrap;
+
+                        .best-courses-enrolled {
+                            display: flex;
+                            align-items: center;
+                            color: $white;
+                            margin-right: 30px;
+
+                            p {
+                                color: $white;
+                                display: flex;
+                                align-items: center;
+                                @include md-max{
+                                    flex-wrap: wrap;
+                                }
+
+                                img {
+                                    max-width: 25px;
+                                    margin-right: 10px;
+                                    filter: brightness(0) invert(1);
+                                }
+                            }
+
+                            @include sm-max {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .best-courses-total-hours {
+
+                            display: flex;
+                            align-items: center;
+                            color: $white;
+
+                            p {
+                                color: $white;
+                                display: flex;
+                                align-items: center;  @include md-max{
+                                    flex-wrap: wrap;
+                                }
+
+                                img {
+                                    max-width: 25px;
+                                    margin-right: 10px;
+                                    filter: brightness(0) invert(1);
+                                }
+                            }
+
+                            @include sm-max {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        @include sm-max {
+                            margin-left: 25px;
+                            margin-right: 25px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .best-courses-slider-items-button {
+                        justify-content: flex-start;
+
+                        .btn {
+                            margin-right: 10px;
+                        }
+
+                        @include sm-max {
+                            margin-left: 25px;
+                            margin-right: 25px;
+                        }
+                    }
+
+                    .best-courses-slider-items-body {
+                        padding-bottom: 20px;
+                    }
+                }
+
+                &.item-1-bg {
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    background-image: radial-gradient(144.18% 145.4% at 52.89% -45.4%, #C91133 0%, #2A2A50 44.13%, #24244B 100%);
+                }
+
+                &.item-2-bg {
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    background-image: linear-gradient(222.25deg, #441970 9.01%, #0F0F2D 58.59%);
+                }
+
+                &.item-3-bg {
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    background-image: radial-gradient(106.79% 314.1% at -10.47% 6.6%, #841E55 0%, #141431 64.98%);
+                }
+
+                &.item-4-bg {
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    background-image: linear-gradient(113.09deg, #1E3263 8.96%, #1D1D48 61.18%);
+                }
+
+                .best-courses-slider-items-react-icon {
+                    position: absolute;
+                    right: 30px;
+                    background-color: #fff;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    -moz-align-items: center;
+                    -ms-align-items: center;
+                    align-items: center;
+                    -moz-justify-content: center;
+                    -ms-justify-content: center;
+                    justify-content: center;
+                    -ms-flex-pack: center;
+                    border-radius: 40px;
+                    border: 1px solid #e2e1e1;
+
+                    i {
+                        color: $red;
+                    }
+                }
+                .img{
+                    
+                        max-width: 450px;
+                        margin: 0 auto;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+
+.search-box-button {
+    background: transparent;
+    border: none;
+    @include display-position(absolute);
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $blue-v1;
+    font-size: 18px;
+}
+
+.form-outline {
+    @include display-position(relative);
+}
+
+.input-group {
+    @include align-items(center);
+
+    @include md-max {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+input.form-control {
+    background-color: #fff;
+    border: 1px solid #6967ff;
+    border-radius: 20px;
+    height: 69px;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 25px;
+
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: $black;
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $black;
+    }
+
+    &::placeholder {
+        color: $black;
+    }
+}
+
+.internal-content-module-16 {
+    padding: 150px 0 70px;
+
+    .content-module-down {
+        background-image: none;
+    }
+
+    .marquee-full-width {
+        .marquee-box {
+            box-shadow: 0px -2px 15px rgb(209 199 231 / 50%);
+        }
+    }
+
+    @include md-max {
+        padding: 70px 0 0px;
+
+    }
+}
+
+.details-page-list-content-module-16 {
+    .content-module-down {
+        // background-image: none;
+        // background-image: url(../images/Rectangle-bg12.png);
+        // background-position: top right;
+        // background-repeat: no-repeat;
+        // background-size: auto;    border-radius: 30px;
+        // padding: 100px;
+    }
+}
+
+.details-page-list-module-17 {
+    background-image: none;
+    background-image: url(../images/footer-bg-top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+
+    @include sm-max {
+        padding: 50px 20px;
+    }
+
+    .content-module-17-bg-img {
+        background-image: none;
+        background-color: transparent;
+        padding: 0;
+
+        .module-content {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .module-left {
+                max-width: 500px;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

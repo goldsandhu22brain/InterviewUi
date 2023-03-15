@@ -1,0 +1,70 @@
+// Header
+header {
+    padding: 20px 0;
+    @include display-position(absolute);
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: $white;
+
+    @include md-max {
+        @include display-position(relative);
+    }
+
+    .logo {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    .header-right {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(flex-end);
+        @include display-position(relative);
+
+        .header-menu-right {
+            padding-left: 30px;
+            margin-left: 15px;
+            border-left: 1px solid #BFCBDF;
+
+            a.header-login-link {
+                color: $red;
+                font-size: 16px;
+                margin-right: 35px;
+
+                @include lg-max {
+                    margin-right: 15px;
+                }
+              
+            }
+
+            @include lg-max {
+                padding-left: 25px;
+                margin-left: 10px;
+
+                .btn-primary {
+                    padding: 13px 10px;
+                    font-size: 13px;
+                }
+            }
+
+            @include sm-max {
+                .btn-primary {
+                    @include display(none);
+                }
+            }
+
+            @include md-max {
+                border-left: 0px;
+                padding-right: 75px;
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+            @include rwd-max(575){
+                padding-right: 40px;  
+            }
+        }
+    }
+}

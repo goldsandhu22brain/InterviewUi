@@ -1,0 +1,136 @@
+footer {
+    padding: 65px 0 30px;
+    background-color: #0F0C13;
+
+    @include md-max {
+        padding: 50px 0 30px;
+    }
+
+    .footer-left-column {
+
+        .footer-logo {
+            img {
+                max-width: 270px;
+            }
+        }
+
+        .footer-email {
+            a {
+                @include display(inline-block);
+                font-size: 13px;
+                color: $white;
+                opacity: 0.8;
+                margin-right: 15px;
+            }
+        }
+
+        .footer-number {
+            p {
+                a {
+                    color: $yellow;
+                    font-size: 24px;
+                }
+
+                font-size: 16px;
+                color: $yellow;
+                @include display(inline-block);
+            }
+        }
+
+        .footer-img-module {
+            h6 {
+                font-size: 20px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+
+            .playstore-img {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .footer-links {
+        @include flexbox;
+        @include justify-content(space-around);
+        @include flex-wrap(wrap);
+
+        .footer-menu {
+            h6 {
+                color: $white;
+                opacity: 1;
+                font-size: 16px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    a {
+                        color: $white;
+                        opacity: 0.8;
+                        font-size: 13px;
+                        padding: 3px 0;
+                        @include display(inline-block);
+                        @include display-position(relative);
+                        @include font-weight(300);
+
+                        &::before {
+                            @include display-position(absolute);
+                            content: '';
+                            left: 0;
+                            width: 0%;
+                            background-color: $yellow;
+                            height: 1px;
+                            bottom: 0px;
+                            @include transition(all, 0.5s, ease-in-out);
+                           
+                        }
+
+                        &:hover {
+                            color: $yellow;
+                            opacity: 1;
+
+                            &::before {
+                                width: 100%;
+                                @include transition(all, 0.5s, ease-in-out);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include md-max {
+            margin-top: 10px;
+        }
+
+        @include rwd-max(575) {
+            @include flex-flow(column);
+        }
+    }
+
+    .bottom-footer {
+        padding-top: 55px;
+        max-width: 760px;
+        margin: 0 auto;
+
+        @include rwd-max(575) {
+            padding-top: 35px;
+        }
+
+        p {
+            font-size: 13px;
+            color: $white;
+            opacity: 0.4;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+
+    .image-max-full {
+        @include md-max {
+            max-width: 150px;
+        }
+    }
+}

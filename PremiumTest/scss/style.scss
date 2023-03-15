@@ -1,0 +1,28 @@
+@import "sass-utils/variables";
+@import "sass-utils/mixins";
+@import "base/media-query";
+@import "sass-utils/functions";
+@import "base/reset";
+@import "base/typography";
+@import "base/common";
+@import "components/buttons";
+@import "components/owlslider";
+@import "components/owlslider";
+@import "components/tab";
+@import "components/marquee";
+@import "components/custrom-dropdown";
+
+//Layout
+@import "layout/header.scss";
+@import "layout/menu.scss";
+@import "layout/banner.scss";
+@import "layout/brand-slider";
+@import "layout/testimonial";
+@import "layout/footer";
+@import "layout/internal-banner";
+@import "layout/down-filter";
+
+// Home 
+@import "pages/home";
+@import "pages/listing";
+@import "pages/details-page";

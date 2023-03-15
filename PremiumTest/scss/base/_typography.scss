@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body,
+p,
+li,
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+    font-family: 'Inter', sans-serif;
+    color: $black;
+}
+
+.h1,
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+    @include md-max {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+
+
+}
+
+.h2,
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+
+    @include md-max {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+}
+
+.h3,
+h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+
+    @include md-max {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+}
+
+.h4,
+h4 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+
+    @include md-max {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.h5,
+h5 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+
+    @include md-max {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+}
+
+.h6,
+h6 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+
+    @include md-max {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+p,
+li,
+a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $black;
+
+    @include md-max {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,37 @@
+.marquee-full-width {
+    margin-top: 70px;
+
+    @include md-max {
+        margin-top: 50px;
+    }
+
+    .marquee-box {
+        border-radius: 20px;
+        border: 1px solid #C2ACFF;
+        padding: 15px;
+        cursor: pointer;
+        background: $white;
+        box-shadow: 0px 1px 5px 0 rgb(193 200 212 / 30%);
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+            font-family: "Inter", sans-serif;
+        }
+    }
+
+    &.marquee-tow {
+        margin-top: 30px;
+    }
+
+    & .owl-stage {
+        @include flexbox;
+        @include align-items(center);
+    }
+}
+
+.internal-content-module-16 {
+    .marquee-full-width {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,61 @@
+.btn-primary {
+    @include page-btn($red, $white);
+    border: 1px solid $red;
+
+    &:hover {
+        @include page-btn($yellow, $black);
+        border: 1px solid $yellow;
+    }
+}
+
+.btn-secondary {
+    @include page-btn($yellow, $black);
+    border: 1px solid $yellow;
+
+    &:hover {
+        @include page-btn($red, $white);
+        border: 1px solid $red;
+    }
+}
+
+
+.btn-outline {
+    @include page-btn($transparent-color, $black);
+    border: 1px solid $black;
+
+    &:hover {
+        @include page-btn($yellow, $black);
+        border: 1px solid $yellow;
+    }
+}
+.btn-outline-light {
+    @include page-btn($transparent-color, $white);
+    border: 1px solid $white;
+
+    &:hover {
+        @include page-btn($yellow, $black);
+        border: 1px solid $yellow;
+    }
+}
+
+
+.btn-light {
+    @include page-btn($white, $black);
+    border: 1px solid $white;
+
+
+    &:hover {
+        @include page-btn($yellow, $black);
+        border: 1px solid $yellow;
+    }
+}
+.btn-link {
+   color: $black;
+   text-decoration: underline;
+
+
+    &:hover {
+        color: $red;
+        text-decoration: none;
+    }
+}

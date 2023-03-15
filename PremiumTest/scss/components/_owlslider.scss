@@ -1,0 +1,140 @@
+// Slider
+
+.best-courses-slider {
+    .owl-dots {
+        text-align: center;
+
+        span {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            background-color: #D9D9D9;
+            @include border-radius(50px);
+            @include display(inline-block);
+        }
+
+        .owl-dot.active {
+            span {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    .item {
+        padding-bottom: 35px;
+    }
+}
+
+.details-page-course-slider {
+    padding-top: 80px;
+    padding-bottom: 65px;
+
+    .brands-section-slider {
+        padding-top: 40px;
+
+        .owl-nav {
+            padding-top: 45px;
+            display: flex;
+            justify-content: center;
+
+            button {
+                width: 48px;
+                height: 48px;
+                background: #FFFFFF;
+                border: 1px solid #C2ACFF;
+                border-radius: 50px;
+                margin: 10px;
+
+                i {
+                    color: #C2ACFF;
+                }
+
+            }
+        }
+    }
+    .list-item {
+        padding: 25px 30px !important;
+    .best-courses-slider-items-react-icon{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-bottom: 15px;
+    }}
+}
+    .box-detals {
+        .list-item {
+            border: 1px solid #C2ACFF;
+            box-shadow: none;
+            border-radius: 10px;
+            background-color: $white;
+            padding: 35px 30px;
+            position: relative;
+
+            .best-courses-slider-items-react-icon {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                -moz-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                -moz-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+                -ms-flex-pack: center;
+                border-radius: 40px;
+                border: 1px solid #e2e1e1;
+
+                i {
+                    color: $red;
+                }
+            }
+
+            .review-star-count {
+                margin-bottom: 10px;
+                color: #767676;
+            }
+
+            .best-courses-slider-items-body {
+                h6 {
+                    @include font-weight(600);
+                    margin-bottom: 5px;
+                }
+
+                .review-star {
+                    .review-star-icon {
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            color: $yellow;
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+
+                    }
+                }
+            }
+
+            .best-courses-slider-items-button {
+                margin-top: 70px;
+
+                .btn-link {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                .btn {
+                    font-size: 15px;
+                    padding: 13px 10px;
+                    line-height: 18px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }

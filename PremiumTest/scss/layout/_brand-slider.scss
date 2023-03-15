@@ -1,0 +1,37 @@
+.brands-section {
+    padding-top: 120px;
+    padding-bottom: 70px;
+
+    @include md-max {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .brands-section-slider {
+        padding-top: 35px;
+
+        .brands-slider {
+            .owl-stage {
+                @include align-items(center);
+                @include flexbox;
+
+                .item {
+                    img {
+                        max-width: 100px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &.details-page-brand-slider {
+        background-color: #F4F7FD;
+        padding-top: 65px 0 55px;
+
+        .brands-section-slider {
+            margin-bottom: 35px;
+            padding-top: 20px;
+        }
+    }
+}
